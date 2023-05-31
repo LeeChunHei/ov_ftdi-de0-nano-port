@@ -1,0 +1,70 @@
+|lab0
+CLOCK_50 => CLOCK_50.IN1
+LED[0] <= hadd:myHalfAdder.port3
+LED[1] <= fadd:myFullAdder.port4
+LED[2] <= fadd:myFullAdder.port3
+LED[3] <= <GND>
+LED[4] <= <GND>
+LED[5] <= <GND>
+LED[6] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[7] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[8] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[9] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0|E15Counter1HzB:myCounter
+Clk => CntOut[0].CLK
+Clk => CntOut[1].CLK
+Clk => CntOut[2].CLK
+Clk => CntOut[3].CLK
+Clk => R[0].CLK
+Clk => R[1].CLK
+Clk => R[2].CLK
+Clk => R[3].CLK
+Clk => R[4].CLK
+Clk => R[5].CLK
+Clk => R[6].CLK
+Clk => R[7].CLK
+Clk => R[8].CLK
+Clk => R[9].CLK
+Clk => R[10].CLK
+Clk => R[11].CLK
+Clk => R[12].CLK
+Clk => R[13].CLK
+Clk => R[14].CLK
+Clk => R[15].CLK
+Clk => R[16].CLK
+Clk => R[17].CLK
+Clk => R[18].CLK
+Clk => R[19].CLK
+Clk => R[20].CLK
+Clk => R[21].CLK
+Clk => R[22].CLK
+Clk => R[23].CLK
+Clk => R[24].CLK
+Clk => R[25].CLK
+D[0] => LessThan1.IN4
+D[1] => LessThan1.IN3
+D[2] => LessThan1.IN2
+D[3] => LessThan1.IN1
+Q[0] <= CntOut[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= CntOut[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= CntOut[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= CntOut[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0|hadd:myHalfAdder
+a => Add0.IN1
+b => Add0.IN2
+cout <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0|fadd:myFullAdder
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+s <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

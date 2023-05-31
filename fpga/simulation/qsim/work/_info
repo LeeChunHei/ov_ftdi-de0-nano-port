@@ -1,0 +1,89 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Projects/usb_capture/fpga/simulation/qsim
+T_opt
+!s110 1685197326
+Ve6eW8ZmdIj;9c[aW8Aiog2
+Z2 04 16 4 work lab0_vlg_vec_tst fast 0
+=1-a8a159e83041-6472120d-3be-527c
+Z3 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1685246257
+Volzd64Jz48gTA<hLkg^Sj2
+R2
+=1-a8a159e83041-6472d130-387-7500
+R3
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+R4
+n@_opt1
+R5
+vlab0
+Z6 !s110 1685246256
+!i10b 1
+!s100 KX]ZDPGK`QmR?nZVG21Dn0
+IYBjLB25:Tbz09IaoG:T3S0
+R1
+w1685246256
+8usb_capture.vo
+Fusb_capture.vo
+!i122 58
+L0 32 1543
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z9 !s108 1685246256.000000
+!s107 usb_capture.vo|
+!s90 -work|work|usb_capture.vo|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vlab0_vlg_vec_tst
+R6
+!i10b 1
+!s100 _eS0k=_]464e2oM1`>][?3
+IF2aRE^bL<4loBaAic@eMz1
+R1
+w1685246255
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 59
+L0 30 26
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 0
+R10
+R4

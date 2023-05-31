@@ -1,0 +1,8 @@
+module lab0(SW,LEDR);
+	input [1:0]SW;     // add SW[0] and SW[1] are inputs
+	output [1:0]LEDR;  // LED's are outputs 
+
+	// instantiate a half adder.  The inputs are SW[0] (a) and SW[1] (b),
+	// the outputs are LERG[0] (s, sum) and LEDR[1] (cout, carry out).
+		hadd myHalfAdder(SW[0], SW[1], LEDR[1], LEDR[0]);
+endmodule
