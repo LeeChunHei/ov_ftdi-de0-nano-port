@@ -1,5 +1,0 @@
-module sdram_ctl
-(
-);
-
-endmodule
