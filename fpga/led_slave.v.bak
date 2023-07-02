@@ -1,0 +1,17 @@
+module led_slave
+ #(
+	  parameter N = 3
+ )(
+	  input  wire             wclk,
+	  input  wire             wrst_n,
+	  input  wire             winc,
+	  input  wire [DSIZE-1:0] wdata,
+	  output wire             wfull,
+	  output wire             awfull,
+	  input  wire             rclk,
+	  input  wire             rrst_n,
+	  input  wire             rinc,
+	  output wire [DSIZE-1:0] rdata,
+	  output wire             rempty,
+	  output wire             arempty
+ );

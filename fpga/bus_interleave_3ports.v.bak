@@ -1,0 +1,19 @@
+module bus_interleave_3ports(
+    input       clk,
+    input       rst_n,
+    input       request0,
+    input       request1,
+    input       request2,
+    output reg  [1:0]grant,
+    input       ce
+);
+
+    initial begin
+        grant = 0;
+    end
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            grant <= 0;
+        end
+        else begin
