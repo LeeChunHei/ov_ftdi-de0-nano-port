@@ -1,0 +1,7 @@
+/fpga/simulation/
+/fpga/incremental_db/
+/fpga/greybox_tmp/
+/fpga/db/
+/fpga/__db/
+/fpga/.qsys_edit/
+

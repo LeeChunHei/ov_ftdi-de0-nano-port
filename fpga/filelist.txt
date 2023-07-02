@@ -1,0 +1,3 @@
+DE0_Nano.v
+filelist.txt
+platform_setup.tcl

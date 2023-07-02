@@ -1,0 +1,3 @@
+module test_ft245_sync(clk, rst_n);
+
+endmodule

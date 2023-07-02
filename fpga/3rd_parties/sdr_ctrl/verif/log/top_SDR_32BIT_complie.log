@@ -1,0 +1,23 @@
+Model Technology ModelSim Microsemi vlog 2020.3 Compiler 2020.07 Jul 13 2020
+Start time: 18:52:54 on Aug 27,2021
+vlog -work work "+define+SDR_32BIT" -f filelist_top.f 
+-- Compiling module tb_top
+-- Compiling module IS42VM16400K
+-- Compiling module mt48lc2m32b2
+-- Compiling module mt48lc8m8a2
+-- Compiling module sdrc_top
+-- Compiling module wb2sdrc
+-- Compiling module async_fifo
+-- Compiling module sdrc_core
+-- Compiling module sdrc_bank_ctl
+-- Compiling module sdrc_bank_fsm
+-- Compiling module sdrc_bs_convert
+-- Compiling module sdrc_req_gen
+-- Compiling module sdrc_xfr_ctl
+
+Top level modules:
+	tb_top
+	IS42VM16400K
+	mt48lc8m8a2
+End time: 18:52:54 on Aug 27,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
