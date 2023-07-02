@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY lab0
+set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:22:00 FEBRUARY 21,2011"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
@@ -169,34 +169,16 @@ set_location_assignment PIN_A12 -to GPIO_0[30]
 set_location_assignment PIN_D11 -to GPIO_0[31]
 set_location_assignment PIN_D12 -to GPIO_0[32]
 set_location_assignment PIN_B12 -to GPIO_0[33]
-set_location_assignment PIN_T9 -to GPIO_1_IN[0]
-set_location_assignment PIN_F13 -to GPIO_1[0]
 set_location_assignment PIN_R9 -to GPIO_1_IN[1]
 set_location_assignment PIN_T15 -to GPIO_1[1]
 set_location_assignment PIN_T14 -to GPIO_1[2]
-set_location_assignment PIN_T13 -to GPIO_1[3]
 set_location_assignment PIN_R13 -to GPIO_1[4]
 set_location_assignment PIN_T12 -to GPIO_1[5]
-set_location_assignment PIN_R12 -to GPIO_1[6]
-set_location_assignment PIN_T11 -to GPIO_1[7]
-set_location_assignment PIN_T10 -to GPIO_1[8]
 set_location_assignment PIN_R11 -to GPIO_1[9]
-set_location_assignment PIN_P11 -to GPIO_1[10]
 set_location_assignment PIN_R10 -to GPIO_1[11]
 set_location_assignment PIN_N12 -to GPIO_1[12]
 set_location_assignment PIN_P9 -to GPIO_1[13]
-set_location_assignment PIN_N9 -to GPIO_1[14]
-set_location_assignment PIN_N11 -to GPIO_1[15]
 set_location_assignment PIN_L16 -to GPIO_1[16]
-set_location_assignment PIN_K16 -to GPIO_1[17]
-set_location_assignment PIN_R16 -to GPIO_1[18]
-set_location_assignment PIN_L15 -to GPIO_1[19]
-set_location_assignment PIN_P15 -to GPIO_1[20]
-set_location_assignment PIN_P16 -to GPIO_1[21]
-set_location_assignment PIN_R14 -to GPIO_1[22]
-set_location_assignment PIN_N16 -to GPIO_1[23]
-set_location_assignment PIN_N15 -to GPIO_1[24]
-set_location_assignment PIN_P14 -to GPIO_1[25]
 set_location_assignment PIN_L14 -to GPIO_1[26]
 set_location_assignment PIN_N14 -to GPIO_1[27]
 set_location_assignment PIN_M10 -to GPIO_1[28]
@@ -209,13 +191,73 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_location_assignment PIN_T9 -to ftdi_clk
+set_location_assignment PIN_R16 -to ftdi_d[0]
+set_location_assignment PIN_L15 -to ftdi_d[1]
+set_location_assignment PIN_P15 -to ftdi_d[2]
+set_location_assignment PIN_P16 -to ftdi_d[3]
+set_location_assignment PIN_R14 -to ftdi_d[4]
+set_location_assignment PIN_N16 -to ftdi_d[5]
+set_location_assignment PIN_N15 -to ftdi_d[6]
+set_location_assignment PIN_P14 -to ftdi_d[7]
+set_location_assignment PIN_P11 -to ftdi_rxf_n
+set_location_assignment PIN_F13 -to ftdi_txe_n
+set_location_assignment PIN_N9 -to ftdi_rd_n
+set_location_assignment PIN_N11 -to ftdi_wr_n
+set_location_assignment PIN_T13 -to ftdi_siwua_n
+set_location_assignment PIN_K16 -to ftdi_oe_n
+set_location_assignment PIN_R12 -to leds[0]
+set_location_assignment PIN_T11 -to leds[1]
+set_location_assignment PIN_T10 -to leds[2]
+set_global_assignment -name VERILOG_FILE sdram_ctl.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/lib/async_fifo_1.v
+set_global_assignment -name VERILOG_FILE "3rd_parties/sdram-controller/rtl/sdram_controller.v"
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/lib/sync_fifo.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_define.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_bs_convert.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v
+set_global_assignment -name VERILOG_FILE bus_interleave_3ports.v
+set_global_assignment -name VERILOG_FILE rr_3req.v
+set_global_assignment -name VERILOG_FILE syncFT245.v
+set_global_assignment -name VERILOG_FILE test_async_fifo.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/wptr_full.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/sync_w2r.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/sync_r2w.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/sync_ptr.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/rptr_empty.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/fifomem_dp.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/fifomem.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/async_fifo.v
+set_global_assignment -name VERILOG_FILE 3rd_parties/async_fifo/rtl/async_bidir_fifo.v
 set_global_assignment -name VERILOG_FILE ../DE0_Nano.v
 set_global_assignment -name SDC_FILE DE0_Nano.SDC
-set_global_assignment -name VERILOG_FILE hadd.v
-set_global_assignment -name VERILOG_FILE lab0.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_async_fifo.vwf
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name VERILOG_FILE test_pll.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_pll.vwf
+set_global_assignment -name VERILOG_FILE test_ft245_sync.v
+set_global_assignment -name VERILOG_FILE bus_decode.v
+set_global_assignment -name VERILOG_FILE bus_master.v
+set_global_assignment -name VERILOG_FILE bus_encode.v
+set_global_assignment -name VERILOG_FILE top.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_ft245_sync.vwf
+set_global_assignment -name VERILOG_FILE test_top.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_top.vwf
+set_global_assignment -name VERILOG_FILE led_slave.v
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VERILOG_FILE test_sdram.v
+set_global_assignment -name VERILOG_FILE sdram.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_sdram.vwf
+set_global_assignment -name VERILOG_FILE sdram_peri.v
+set_global_assignment -name VERILOG_FILE test_sdram_peri.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_sdram_peri.vwf
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
@@ -334,34 +376,16 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[31]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[33]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1_IN[0]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1_IN[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[2]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[4]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[5]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[6]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[7]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[8]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[9]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[10]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[11]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[12]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[13]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[14]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[15]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[16]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[17]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[18]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[19]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[20]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[21]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[22]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[23]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[24]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[25]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[26]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[27]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[28]
@@ -370,11 +394,25 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[31]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[32]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_1[33]
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VERILOG_FILE fadd.v
-set_global_assignment -name VERILOG_FILE E15Counter1HzB.v
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_d[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_rxf_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_txe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_rd_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_wr_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_siwua_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ftdi_oe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leds[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leds[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to leds[2]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VERILOG_FILE syncFT245.v

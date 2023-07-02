@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off usb_capture -c usb_capture --vector_source="D:/Projects/usb_capture/fpga/Waveform2.vwf" --testbench_file="D:/Projects/usb_capture/fpga/simulation/qsim/Waveform2.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off usb_capture -c usb_capture --vector_source="D:/Projects/usb_capture/fpga/test_sdram_peri.vwf" --testbench_file="D:/Projects/usb_capture/fpga/simulation/qsim/test_sdram_peri.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,11 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun May 28 11:57:35 2023
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off usb_capture -c usb_capture --vector_source=D:/Projects/usb_capture/fpga/Waveform2.vwf --testbench_file=D:/Projects/usb_capture/fpga/simulation/qsim/Waveform2.vwf.vt
+    Info: Processing started: Sun Jul  2 18:46:59 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off usb_capture -c usb_capture --vector_source=D:/Projects/usb_capture/fpga/test_sdram_peri.vwf --testbench_file=D:/Projects/usb_capture/fpga/simulation/qsim/test_sdram_peri.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-Can't find port "R[1]" in design
+n "io_ba[1]" in vector source file when writing test bench files
+
+esign
+
+dram_peri:peri|sdram_ctl:ram|target_time_cnt[9]" in design
 
 Completed successfully. 
 
@@ -57,14 +61,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun May 28 11:57:35 2023
+    Info: Processing started: Sun Jul  2 18:47:00 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Projects/usb_capture/fpga/simulation/qsim/ usb_capture -c usb_capture
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file usb_capture.vo in folder "D:/Projects/usb_capture/fpga/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4649 megabytes
-    Info: Processing ended: Sun May 28 11:57:36 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Sun Jul  2 18:47:00 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
@@ -88,41 +92,40 @@ Reading pref.tcl
 # do usb_capture.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Errors: 0, Warnings: 1
 
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 11:57:36 on May 28,2023
+# Start time: 18:47:01 on Jul 02,2023
 # vlog -work work usb_capture.vo 
 
-# -- Compiling module lab0
+# -- Compiling module test_sdram_peri
 
 # 
 
 # Top level modules:
-# 	lab0
+# 	test_sdram_peri
 
-# End time: 11:57:36 on May 28,2023, Elapsed time: 0:00:00
+# End time: 18:47:01 on Jul 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
-# Start time: 11:57:36 on May 28,2023
-# vlog -work work Waveform2.vwf.vt 
+# Start time: 18:47:01 on Jul 02,2023
+# vlog -work work test_sdram_peri.vwf.vt 
 
-# -- Compiling module lab0_vlg_vec_tst
+# -- Compiling module test_sdram_peri_vlg_vec_tst
 
 # 
 
 # Top level modules:
-# 	lab0_vlg_vec_tst
+# 	test_sdram_peri_vlg_vec_tst
 
-# End time: 11:57:36 on May 28,2023, Elapsed time: 0:00:00
+# End time: 18:47:01 on Jul 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab0_vlg_vec_tst 
-# Start time: 11:57:36 on May 28,2023
+# vsim -voptargs=""+acc"" -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.test_sdram_peri_vlg_vec_tst 
+# Start time: 18:47:01 on Jul 02,2023
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
@@ -139,47 +142,36 @@ Reading pref.tcl
 # //  18 U.S.C. Section 1905.
 # //
 
-# Loading work.lab0_vlg_vec_tst(fast)
-# Loading work.lab0(fast)
+# Loading work.test_sdram_peri_vlg_vec_tst(fast)
+# Loading work.test_sdram_peri(fast)
 # Loading cycloneive_ver.cycloneive_io_obuf(fast)
 # Loading cycloneive_ver.cycloneive_io_ibuf(fast)
 # Loading cycloneive_ver.cycloneive_clkctrl(fast)
 # Loading cycloneive_ver.cycloneive_mux41(fast)
 # Loading cycloneive_ver.cycloneive_ena_reg(fast)
 # Loading cycloneive_ver.cycloneive_lcell_comb(fast)
-# Loading altera_ver.dffeas(fast)
 # Loading cycloneive_ver.cycloneive_lcell_comb(fast__1)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__2)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__3)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__4)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__5)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__6)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__7)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__8)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__9)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__10)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__11)
-# Loading cycloneive_ver.cycloneive_lcell_comb(fast__12)
+# Loading altera_ver.dffeas(fast)
 
 # after#26
 
-# ** Note: $finish    : Waveform2.vwf.vt(45)
-#    Time: 1 us  Iteration: 0  Instance: /lab0_vlg_vec_tst
+# ** Note: $finish    : test_sdram_peri.vwf.vt(91)
+#    Time: 50 us  Iteration: 0  Instance: /test_sdram_peri_vlg_vec_tst
 
-# End time: 11:57:37 on May 28,2023, Elapsed time: 0:00:01
+# End time: 18:47:03 on Jul 02,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Projects/usb_capture/fpga/Waveform2.vwf...
+Reading D:/Projects/usb_capture/fpga/test_sdram_peri.vwf...
 
 Reading D:/Projects/usb_capture/fpga/simulation/qsim/usb_capture.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Projects/usb_capture/fpga/simulation/qsim/usb_capture_20230528115737.sim.vwf
+Writing the resulting VWF to D:/Projects/usb_capture/fpga/simulation/qsim/usb_capture_20230702184704.sim.vwf
 
 Finished VCD to VWF conversion.
 
