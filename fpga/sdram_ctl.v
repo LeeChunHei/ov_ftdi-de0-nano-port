@@ -50,7 +50,7 @@ module sdram_ctl
 	reg [4:0]cmd;
 
 	reg [31:0]active_addr;
-	reg [7:0]xfer_cnt;
+	reg [31:0]xfer_cnt;
 	
 	reg [DQM_WIDTH-1:0]dq_out;
 	reg [DQ_WIDTH-1:0]dq;
@@ -58,6 +58,8 @@ module sdram_ctl
 	
 	reg [7:0]refresh_miss_cnt;
 	reg [31:0]refresh_counter;
+	
+	reg [31:0]curr_addr;
 	
 	// SDRAM MODE Register BA1|BA0|A12|A11|A10|A9|A8|A7|A6|A5|A4|A3|A2|A1|A0
 	localparam MODE_REGISTER	=	(CAS==2 && BST_LEN == 1) ? {5'b00000,1'b0,2'b00,3'b010,1'b0,3'b000} :
@@ -79,10 +81,9 @@ module sdram_ctl
 	localparam ACTIVE				= 6;
 	localparam WRITE				= 7;
 	localparam READ				= 8;
-	localparam READ_BURST		= 9;
-	localparam PRECHARGE			= 10;
-	localparam REFRESH			= 11;
-	localparam NOP_WAIT			= 250;
+	localparam PRECHARGE			= 9;
+	localparam REFRESH			= 10;
+	localparam NOP_WAIT			= 255;
 	
 	// Command cke|cs_n|ras_n|cas_n|we_n
 	localparam CMD_DESL	= 5'b11xxx;	// Device deselect
@@ -108,6 +109,8 @@ module sdram_ctl
 	assign io_ras_n = cmd[2];
 	assign io_cas_n = cmd[1];
 	assign io_we_n = cmd[0];
+	
+//	assign curr_addr = active_addr + xfer_cnt;
 	
 	generate
 		if (DQ_WIDTH == 8) begin
@@ -260,7 +263,8 @@ module sdram_ctl
 					end
 					dq <= app_wr_data;
 					app_wr_next_req <= 1;
-					xfer_cnt <= xfer_cnt + 1;
+					xfer_cnt <= xfer_cnt + 32'b1;
+					active_addr <= active_addr + 32'b1;
 					if (xfer_cnt >= app_req_len) begin//-1
 						if (DQ_WIDTH == 8) begin
 							dq_out <= 0;
@@ -280,8 +284,32 @@ module sdram_ctl
 						next_state <= PRECHARGE;
 						state <= NOP_WAIT;
 					end
+					else begin
+						if (BST_LEN == 2) begin
+							if (active_addr[0] == 0) begin
+								cmd <= CMD_WRITE;
+								io_addr <= active_addr[COLUMN_ADDR_WIDTH-1:0];
+								io_addr[10] <= 0; // no auto precharge
+							end
+						end
+						else if (BST_LEN == 4) begin
+							if (active_addr[1:0] == 2'b00) begin
+								cmd <= CMD_WRITE;
+								io_addr <= active_addr[COLUMN_ADDR_WIDTH-1:0];
+								io_addr[10] <= 0; // no auto precharge
+							end
+						end
+						else if (BST_LEN == 8) begin
+							if (active_addr[2:0] == 3'b000) begin
+								cmd <= CMD_WRITE;
+								io_addr <= active_addr[COLUMN_ADDR_WIDTH-1:0];
+								io_addr[10] <= 0; // no auto precharge
+							end
+						end
+					end
 				end
 				READ: begin
+					// TODO: Should be NOP when enough address been sent
 					cmd <= CMD_READ;
 					io_addr <= active_addr[ADDR_WIDTH-1:0];
 					io_addr[10] <= 0; // no auto precharge
@@ -297,16 +325,13 @@ module sdram_ctl
 						dq_out <= 4'b0000;
 						io_dqm <= 4'b0000;
 					end
-					time_counter <= 0;
-					target_time_cnt <= CAS+1;
-					next_state <= READ_BURST;
-					state <= NOP_WAIT;
-				end
-				READ_BURST: begin
-					cmd <= CMD_NOP;
-					app_rd_data <= dq_rd;//io_dq;
-					app_rd_ready <= 1;
-					xfer_cnt <= xfer_cnt + 1;
+					active_addr <= active_addr + 1;
+					time_counter <= time_counter + 1;
+					if (time_counter > CAS) begin
+						app_rd_data <= dq_rd;
+						app_rd_ready <= 1;
+						xfer_cnt <= xfer_cnt + 1;
+					end
 					if (xfer_cnt >= app_req_len) begin//-1
 						if (DQ_WIDTH == 8) begin
 							dq_out <= 0;

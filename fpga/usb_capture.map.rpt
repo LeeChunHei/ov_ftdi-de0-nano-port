@@ -1,5 +1,5 @@
 Analysis & Synthesis report for usb_capture
-Sun Jul  2 22:26:27 2023
+Thu Jul  6 23:35:18 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -54,17 +54,16 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
  46. Parameter Settings for Inferred Entity Instance: syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0
  47. altpll Parameter Settings by Entity Instance
  48. altsyncram Parameter Settings by Entity Instance
- 49. Port Connectivity Checks: "sdram_peri:ram_peri"
- 50. Port Connectivity Checks: "timer:timer0"
- 51. Port Connectivity Checks: "led_slave:led_peri"
- 52. Port Connectivity Checks: "bus_encode:benc"
- 53. Port Connectivity Checks: "syncFT245:ft245_bus|async_fifo:output_fifo"
- 54. Port Connectivity Checks: "syncFT245:ft245_bus|async_fifo:incoming_fifo"
- 55. Port Connectivity Checks: "pll:pll_0"
- 56. Post-Synthesis Netlist Statistics for Top Partition
- 57. Elapsed Time Per Partition
- 58. Analysis & Synthesis Messages
- 59. Analysis & Synthesis Suppressed Messages
+ 49. Port Connectivity Checks: "timer:timer0"
+ 50. Port Connectivity Checks: "led_slave:led_peri"
+ 51. Port Connectivity Checks: "bus_encode:benc"
+ 52. Port Connectivity Checks: "syncFT245:ft245_bus|async_fifo:output_fifo"
+ 53. Port Connectivity Checks: "syncFT245:ft245_bus|async_fifo:incoming_fifo"
+ 54. Port Connectivity Checks: "pll:pll_0"
+ 55. Post-Synthesis Netlist Statistics for Top Partition
+ 56. Elapsed Time Per Partition
+ 57. Analysis & Synthesis Messages
+ 58. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -91,15 +90,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul  2 22:26:27 2023          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul  6 23:35:18 2023          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; usb_capture                                    ;
 ; Top-level Entity Name              ; top                                            ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 3,722                                          ;
-;     Total combinational functions  ; 3,283                                          ;
-;     Dedicated logic registers      ; 1,716                                          ;
-; Total registers                    ; 1716                                           ;
+; Total logic elements               ; 3,772                                          ;
+;     Total combinational functions  ; 3,357                                          ;
+;     Dedicated logic registers      ; 1,737                                          ;
+; Total registers                    ; 1737                                           ;
 ; Total pins                         ; 66                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 1,024                                          ;
@@ -202,7 +201,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 32          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -262,20 +261,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                        ;
 +---------------------------------------------+------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 3,722                                                                        ;
+; Estimated Total logic elements              ; 3,772                                                                        ;
 ;                                             ;                                                                              ;
-; Total combinational functions               ; 3283                                                                         ;
+; Total combinational functions               ; 3357                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                              ;
-;     -- 4 input functions                    ; 2398                                                                         ;
-;     -- 3 input functions                    ; 626                                                                          ;
-;     -- <=2 input functions                  ; 259                                                                          ;
+;     -- 4 input functions                    ; 2404                                                                         ;
+;     -- 3 input functions                    ; 652                                                                          ;
+;     -- <=2 input functions                  ; 301                                                                          ;
 ;                                             ;                                                                              ;
 ; Logic elements by mode                      ;                                                                              ;
-;     -- normal mode                          ; 3104                                                                         ;
-;     -- arithmetic mode                      ; 179                                                                          ;
+;     -- normal mode                          ; 3138                                                                         ;
+;     -- arithmetic mode                      ; 219                                                                          ;
 ;                                             ;                                                                              ;
-; Total registers                             ; 1716                                                                         ;
-;     -- Dedicated logic registers            ; 1716                                                                         ;
+; Total registers                             ; 1737                                                                         ;
+;     -- Dedicated logic registers            ; 1737                                                                         ;
 ;     -- I/O registers                        ; 0                                                                            ;
 ;                                             ;                                                                              ;
 ; I/O pins                                    ; 66                                                                           ;
@@ -287,8 +286,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                            ;
 ;                                             ;                                                                              ;
 ; Maximum fan-out node                        ; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 1752                                                                         ;
-; Total fan-out                               ; 16638                                                                        ;
+; Maximum fan-out                             ; 1775                                                                         ;
+; Total fan-out                               ; 16965                                                                        ;
 ; Average fan-out                             ; 3.22                                                                         ;
 +---------------------------------------------+------------------------------------------------------------------------------+
 
@@ -298,7 +297,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                   ; Entity Name     ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |top                                            ; 3283 (0)            ; 1716 (0)                  ; 1024        ; 0            ; 0       ; 0         ; 66   ; 0            ; |top                                                                                                                  ; top             ; work         ;
+; |top                                            ; 3357 (0)            ; 1737 (0)                  ; 1024        ; 0            ; 0       ; 0         ; 66   ; 0            ; |top                                                                                                                  ; top             ; work         ;
 ;    |bus_decode:bdec|                            ; 11 (11)             ; 54 (54)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|bus_decode:bdec                                                                                                  ; bus_decode      ; work         ;
 ;    |bus_encode:benc|                            ; 49 (49)             ; 70 (70)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|bus_encode:benc                                                                                                  ; bus_encode      ; work         ;
 ;    |bus_master:bm|                              ; 15 (15)             ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|bus_master:bm                                                                                                    ; bus_master      ; work         ;
@@ -306,22 +305,22 @@ https://fpgasoftware.intel.com/eula.
 ;    |pll:pll_0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:pll_0                                                                                                        ; pll             ; work         ;
 ;       |altpll:altpll_component|                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:pll_0|altpll:altpll_component                                                                                ; altpll          ; work         ;
 ;          |pll_altpll:auto_generated|            ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated                                                      ; pll_altpll      ; work         ;
-;    |sdram_peri:ram_peri|                        ; 3013 (2766)         ; 1342 (1139)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sdram_peri:ram_peri                                                                                              ; sdram_peri      ; work         ;
-;       |sdram_ctl:ram|                           ; 247 (247)           ; 203 (203)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sdram_peri:ram_peri|sdram_ctl:ram                                                                                ; sdram_ctl       ; work         ;
-;    |syncFT245:ft245_bus|                        ; 98 (18)             ; 126 (14)                  ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus                                                                                              ; syncFT245       ; work         ;
-;       |async_fifo:incoming_fifo|                ; 40 (0)              ; 56 (0)                    ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo                                                                     ; async_fifo      ; work         ;
+;    |sdram_peri:ram_peri|                        ; 3091 (2779)         ; 1363 (1139)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sdram_peri:ram_peri                                                                                              ; sdram_peri      ; work         ;
+;       |sdram_ctl:ram|                           ; 312 (312)           ; 224 (224)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sdram_peri:ram_peri|sdram_ctl:ram                                                                                ; sdram_ctl       ; work         ;
+;    |syncFT245:ft245_bus|                        ; 94 (18)             ; 126 (14)                  ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus                                                                                              ; syncFT245       ; work         ;
+;       |async_fifo:incoming_fifo|                ; 38 (0)              ; 56 (0)                    ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo                                                                     ; async_fifo      ; work         ;
 ;          |fifomem:fifomem|                      ; 1 (1)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem                                                     ; fifomem         ; work         ;
 ;             |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0                                ; altsyncram      ; work         ;
 ;                |altsyncram_mmd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated ; altsyncram_mmd1 ; work         ;
 ;          |rptr_empty:rptr_empty|                ; 19 (19)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty                                               ; rptr_empty      ; work         ;
 ;          |sync_r2w:sync_r2w|                    ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w                                                   ; sync_r2w        ; work         ;
 ;          |sync_w2r:sync_w2r|                    ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_w2r:sync_w2r                                                   ; sync_w2r        ; work         ;
-;          |wptr_full:wptr_full|                  ; 20 (20)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full                                                 ; wptr_full       ; work         ;
-;       |async_fifo:output_fifo|                  ; 40 (0)              ; 56 (0)                    ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo                                                                       ; async_fifo      ; work         ;
+;          |wptr_full:wptr_full|                  ; 18 (18)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full                                                 ; wptr_full       ; work         ;
+;       |async_fifo:output_fifo|                  ; 38 (0)              ; 56 (0)                    ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo                                                                       ; async_fifo      ; work         ;
 ;          |fifomem:fifomem|                      ; 1 (1)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem                                                       ; fifomem         ; work         ;
 ;             |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0                                  ; altsyncram      ; work         ;
 ;                |altsyncram_mmd1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated   ; altsyncram_mmd1 ; work         ;
-;          |rptr_empty:rptr_empty|                ; 21 (21)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|rptr_empty:rptr_empty                                                 ; rptr_empty      ; work         ;
+;          |rptr_empty:rptr_empty|                ; 19 (19)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|rptr_empty:rptr_empty                                                 ; rptr_empty      ; work         ;
 ;          |sync_r2w:sync_r2w|                    ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|sync_r2w:sync_r2w                                                     ; sync_r2w        ; work         ;
 ;          |sync_w2r:sync_w2r|                    ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r                                                     ; sync_w2r        ; work         ;
 ;          |wptr_full:wptr_full|                  ; 18 (18)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full                                                   ; wptr_full       ; work         ;
@@ -350,44 +349,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|sdram_peri:ram_peri|sdram_ctl:ram|next_state                                                                                                                                                                                                   ;
-+---------------------------+--------------------+----------------------+-----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
-; Name                      ; next_state.REFRESH ; next_state.PRECHARGE ; next_state.READ_BURST ; next_state.READ ; next_state.WRITE ; next_state.IDLE ; next_state.LOAD_MODE_REQ ; next_state.REFRESH_INIT_1 ; next_state.REFRESH_INIT_0 ; next_state.PRECHARGE_INIT ;
-+---------------------------+--------------------+----------------------+-----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
-; next_state.PRECHARGE_INIT ; 0                  ; 0                    ; 0                     ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 0                         ;
-; next_state.REFRESH_INIT_0 ; 0                  ; 0                    ; 0                     ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 1                         ; 1                         ;
-; next_state.REFRESH_INIT_1 ; 0                  ; 0                    ; 0                     ; 0               ; 0                ; 0               ; 0                        ; 1                         ; 0                         ; 1                         ;
-; next_state.LOAD_MODE_REQ  ; 0                  ; 0                    ; 0                     ; 0               ; 0                ; 0               ; 1                        ; 0                         ; 0                         ; 1                         ;
-; next_state.IDLE           ; 0                  ; 0                    ; 0                     ; 0               ; 0                ; 1               ; 0                        ; 0                         ; 0                         ; 1                         ;
-; next_state.WRITE          ; 0                  ; 0                    ; 0                     ; 0               ; 1                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
-; next_state.READ           ; 0                  ; 0                    ; 0                     ; 1               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
-; next_state.READ_BURST     ; 0                  ; 0                    ; 1                     ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
-; next_state.PRECHARGE      ; 0                  ; 1                    ; 0                     ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
-; next_state.REFRESH        ; 1                  ; 0                    ; 0                     ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
-+---------------------------+--------------------+----------------------+-----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|sdram_peri:ram_peri|sdram_ctl:ram|next_state                                                                                                                                                                           ;
++---------------------------+--------------------+----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
+; Name                      ; next_state.REFRESH ; next_state.PRECHARGE ; next_state.READ ; next_state.WRITE ; next_state.IDLE ; next_state.LOAD_MODE_REQ ; next_state.REFRESH_INIT_1 ; next_state.REFRESH_INIT_0 ; next_state.PRECHARGE_INIT ;
++---------------------------+--------------------+----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
+; next_state.PRECHARGE_INIT ; 0                  ; 0                    ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 0                         ;
+; next_state.REFRESH_INIT_0 ; 0                  ; 0                    ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 1                         ; 1                         ;
+; next_state.REFRESH_INIT_1 ; 0                  ; 0                    ; 0               ; 0                ; 0               ; 0                        ; 1                         ; 0                         ; 1                         ;
+; next_state.LOAD_MODE_REQ  ; 0                  ; 0                    ; 0               ; 0                ; 0               ; 1                        ; 0                         ; 0                         ; 1                         ;
+; next_state.IDLE           ; 0                  ; 0                    ; 0               ; 0                ; 1               ; 0                        ; 0                         ; 0                         ; 1                         ;
+; next_state.WRITE          ; 0                  ; 0                    ; 0               ; 1                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
+; next_state.READ           ; 0                  ; 0                    ; 1               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
+; next_state.PRECHARGE      ; 0                  ; 1                    ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
+; next_state.REFRESH        ; 1                  ; 0                    ; 0               ; 0                ; 0               ; 0                        ; 0                         ; 0                         ; 1                         ;
++---------------------------+--------------------+----------------------+-----------------+------------------+-----------------+--------------------------+---------------------------+---------------------------+---------------------------+
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|sdram_peri:ram_peri|sdram_ctl:ram|state                                                                                                                                                                                                  ;
-+----------------------+---------------+-----------------+------------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
-; Name                 ; state.REFRESH ; state.PRECHARGE ; state.READ_BURST ; state.READ ; state.WRITE ; state.ACTIVE ; state.IDLE ; state.LOAD_MODE_REQ ; state.REFRESH_INIT_1 ; state.REFRESH_INIT_0 ; state.PRECHARGE_INIT ; state.00000000 ; state.NOP_WAIT ;
-+----------------------+---------------+-----------------+------------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
-; state.00000000       ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 0              ; 0              ;
-; state.PRECHARGE_INIT ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 1                    ; 1              ; 0              ;
-; state.REFRESH_INIT_0 ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 1                    ; 0                    ; 1              ; 0              ;
-; state.REFRESH_INIT_1 ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 1                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.LOAD_MODE_REQ  ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 1                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.IDLE           ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 1          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.ACTIVE         ; 0             ; 0               ; 0                ; 0          ; 0           ; 1            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.WRITE          ; 0             ; 0               ; 0                ; 0          ; 1           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.READ           ; 0             ; 0               ; 0                ; 1          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.READ_BURST     ; 0             ; 0               ; 1                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.PRECHARGE      ; 0             ; 1               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.REFRESH        ; 1             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
-; state.NOP_WAIT       ; 0             ; 0               ; 0                ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 1              ;
-+----------------------+---------------+-----------------+------------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|sdram_peri:ram_peri|sdram_ctl:ram|state                                                                                                                                                                               ;
++----------------------+---------------+-----------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
+; Name                 ; state.REFRESH ; state.PRECHARGE ; state.READ ; state.WRITE ; state.ACTIVE ; state.IDLE ; state.LOAD_MODE_REQ ; state.REFRESH_INIT_1 ; state.REFRESH_INIT_0 ; state.PRECHARGE_INIT ; state.00000000 ; state.NOP_WAIT ;
++----------------------+---------------+-----------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
+; state.00000000       ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 0              ; 0              ;
+; state.PRECHARGE_INIT ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 1                    ; 1              ; 0              ;
+; state.REFRESH_INIT_0 ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 1                    ; 0                    ; 1              ; 0              ;
+; state.REFRESH_INIT_1 ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 1                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.LOAD_MODE_REQ  ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 1                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.IDLE           ; 0             ; 0               ; 0          ; 0           ; 0            ; 1          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.ACTIVE         ; 0             ; 0               ; 0          ; 0           ; 1            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.WRITE          ; 0             ; 0               ; 0          ; 1           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.READ           ; 0             ; 0               ; 1          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.PRECHARGE      ; 0             ; 1               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.REFRESH        ; 1             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 0              ;
+; state.NOP_WAIT       ; 0             ; 0               ; 0          ; 0           ; 0            ; 0          ; 0                   ; 0                    ; 0                    ; 0                    ; 1              ; 1              ;
++----------------------+---------------+-----------------+------------+-------------+--------------+------------+---------------------+----------------------+----------------------+----------------------+----------------+----------------+
 
 
 Encoding Type:  One-Hot
@@ -475,9 +472,10 @@ Encoding Type:  One-Hot
 ; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[6] ; Merged with syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rbin[6] ;
 ; syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full|wptr[6]   ; Merged with syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full|wbin[6]   ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|io_dqm[1]                                ; Merged with sdram_peri:ram_peri|sdram_ctl:ram|io_dqm[0]                                ;
+; sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[5,6]                     ; Merged with sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[2]                       ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[4,7..9,11..31]           ; Merged with sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[10]                      ;
-; sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[6]                       ; Merged with sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[5]                       ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|dq_out[1]                                ; Merged with sdram_peri:ram_peri|sdram_ctl:ram|dq_out[0]                                ;
+; sdram_peri:ram_peri|sdram_ctl:ram|next_state~11                            ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~12                            ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~13                            ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~14                            ; Lost fanout                                                                            ;
@@ -485,14 +483,13 @@ Encoding Type:  One-Hot
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~16                            ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~17                            ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|next_state~18                            ; Lost fanout                                                                            ;
-; sdram_peri:ram_peri|sdram_ctl:ram|next_state~19                            ; Lost fanout                                                                            ;
+; sdram_peri:ram_peri|sdram_ctl:ram|state~16                                 ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|state~17                                 ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|state~18                                 ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|state~19                                 ; Lost fanout                                                                            ;
-; sdram_peri:ram_peri|sdram_ctl:ram|state~20                                 ; Lost fanout                                                                            ;
+; sdram_peri:ram_peri|sdram_ctl:ram|state~21                                 ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|state~22                                 ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|state~23                                 ; Lost fanout                                                                            ;
-; sdram_peri:ram_peri|sdram_ctl:ram|state~24                                 ; Lost fanout                                                                            ;
 ; bus_encode:benc|fsm_state~10                                               ; Lost fanout                                                                            ;
 ; bus_encode:benc|fsm_state~11                                               ; Lost fanout                                                                            ;
 ; bus_encode:benc|fsm_state~12                                               ; Lost fanout                                                                            ;
@@ -503,8 +500,10 @@ Encoding Type:  One-Hot
 ; syncFT245:ft245_bus|fsm_state~11                                           ; Lost fanout                                                                            ;
 ; syncFT245:ft245_bus|fsm_state~12                                           ; Lost fanout                                                                            ;
 ; bus_master:bm|fsm_state.READ                                               ; Merged with bus_master:bm|sink_ack                                                     ;
+; sdram_peri:ram_peri|app_req_addr[24..31]                                   ; Lost fanout                                                                            ;
+; sdram_peri:ram_peri|sdram_ctl:ram|active_addr[24..31]                      ; Lost fanout                                                                            ;
 ; sdram_peri:ram_peri|sdram_ctl:ram|target_time_cnt[10]                      ; Stuck at GND due to stuck port data_in                                                 ;
-; Total Number of Removed Registers = 76                                     ;                                                                                        ;
+; Total Number of Removed Registers = 93                                     ;                                                                                        ;
 +----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 
@@ -523,12 +522,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1716  ;
-; Number of registers using Synchronous Clear  ; 72    ;
-; Number of registers using Synchronous Load   ; 23    ;
-; Number of registers using Asynchronous Clear ; 556   ;
+; Total registers                              ; 1737  ;
+; Number of registers using Synchronous Clear  ; 96    ;
+; Number of registers using Synchronous Load   ; 47    ;
+; Number of registers using Asynchronous Clear ; 555   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 685   ;
+; Number of registers using Clock Enable       ; 706   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -563,152 +562,152 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|led_slave:led_peri|dat_r[3]~reg0                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|bus_master:bm|source_d[1]                          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|xfer_cnt[7]      ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |top|bus_encode:benc|source_d[0]                        ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|io_addr[12]      ;
-; 6:1                ; 9 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|io_addr[0]       ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|time_counter[2]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][6]                     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|led_slave:led_peri|dat_r[0]~reg0                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|bus_master:bm|source_d[5]                          ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|active_addr[25]  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|xfer_cnt[5]      ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |top|bus_encode:benc|source_d[3]                        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|io_addr[9]       ;
+; 7:1                ; 9 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|io_addr[0]       ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|time_counter[28] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][4]                     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][4]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][3]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][2]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][4]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][1]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][3]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][4]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][5]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][5]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][4]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][3]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][6]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][6]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][6]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][6]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][2]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][3]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][4]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][2]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][1]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][1]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][2]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][2]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][3]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][6]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][2]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][2]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][2]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][3]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][4]                     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][1]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][14]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][12]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][4]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][12]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][11]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][12]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][12]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][8]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][8]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][11]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][10]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][12]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][12]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][12]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][11]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][10]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][13]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][14]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][15]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][14]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][9]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][9]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][12]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][10]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][14]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][11]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][8]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][15]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][15]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][12]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][8]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][8]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][8]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][13]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][14]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][14]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][11]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][11]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][13]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][11]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][12]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][8]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][14]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][8]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][8]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][9]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][12]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][12]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][8]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][14]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][14]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][10]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][13]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][8]                     ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][13]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][11]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][8]                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][11]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][17]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][21]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][19]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][20]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][18]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][13]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][13]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][15]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][19]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][17]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][19]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][17]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][18]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][19]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][17]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][20]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][17]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][21]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][19]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][19]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][23]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][22]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][23]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][21]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][22]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][22]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][23]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][20]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][21]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][16]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][22]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][20]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][16]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][17]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][20]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][16]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][16]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][18]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][21]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][21]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][21]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][21]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][17]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][19]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][19]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][29]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][30]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][27]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][20]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][16]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[31][31]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[30][29]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[29][31]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[28][24]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][26]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[27][24]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[26][29]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][24]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][31]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][26]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][28]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[25][26]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[24][24]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[23][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[22][30]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[21][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][31]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][27]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][29]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][27]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][28]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][25]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][28]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][25]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][26]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][25]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][30]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][24]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[20][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[19][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[18][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[17][27]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[16][27]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[15][26]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[14][25]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[13][27]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[12][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[11][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[10][30]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[9][24]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[8][28]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[7][25]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[6][30]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[5][28]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[4][28]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[3][28]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][27]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][27]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][24]                    ;
-; 35:1               ; 16 bits   ; 368 LEs       ; 352 LEs              ; 16 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|app_wr_data[4]                 ;
-; 261:1              ; 8 bits    ; 1392 LEs      ; 16 LEs               ; 1376 LEs               ; Yes        ; |top|sdram_peri:ram_peri|xfer_counter[5]                ;
-; 262:1              ; 6 bits    ; 1044 LEs      ; 12 LEs               ; 1032 LEs               ; Yes        ; |top|sdram_peri:ram_peri|state[7]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[2][28]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[1][28]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|data[0][28]                    ;
+; 35:1               ; 16 bits   ; 368 LEs       ; 352 LEs              ; 16 LEs                 ; Yes        ; |top|sdram_peri:ram_peri|app_wr_data[15]                ;
+; 261:1              ; 8 bits    ; 1392 LEs      ; 16 LEs               ; 1376 LEs               ; Yes        ; |top|sdram_peri:ram_peri|xfer_counter[4]                ;
+; 262:1              ; 6 bits    ; 1044 LEs      ; 12 LEs               ; 1032 LEs               ; Yes        ; |top|sdram_peri:ram_peri|state[3]                       ;
 ; 73:1               ; 8 bits    ; 384 LEs       ; 384 LEs              ; 0 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|dat_r[0]~reg0                  ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |top|sdram_peri:ram_peri|sdram_ctl:ram|io_dqm[0]        ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|syncFT245:ft245_bus|fsm_state                      ;
-; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; No         ; |top|sdram_peri:ram_peri|Mux10                          ;
+; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; No         ; |top|sdram_peri:ram_peri|Mux12                          ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|sdram_peri:ram_peri|sdram_ctl:ram|next_state.WRITE ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|bus_decode:bdec|Selector0                          ;
-; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |top|sdram_peri:ram_peri|sdram_ctl:ram|Selector86       ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 20 LEs               ; 40 LEs                 ; No         ; |top|sdram_peri:ram_peri|sdram_ctl:ram|Selector84       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top|bus_decode:bdec|Selector1                          ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |top|sdram_peri:ram_peri|sdram_ctl:ram|Selector73       ;
+; 9:1                ; 9 bits    ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; No         ; |top|sdram_peri:ram_peri|sdram_ctl:ram|Selector74       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
 
 
@@ -1524,21 +1523,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sdram_peri:ram_peri"                                                                                                   ;
-+--------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port               ; Type   ; Severity ; Details                                                                                                  ;
-+--------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; p_cmd_winc         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_app_req          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_app_req_ack      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_state            ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_read_fifo_rempty ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_app_rd_valid     ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; p_app_req_len      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+--------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------+
 ; Port Connectivity Checks: "timer:timer0"             ;
 +--------------------+-------+----------+--------------+
@@ -1625,33 +1609,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 66                          ;
-; cycloneiii_ff         ; 1716                        ;
-;     CLR               ; 189                         ;
+; cycloneiii_ff         ; 1737                        ;
+;     CLR               ; 188                         ;
 ;     CLR SCLR          ; 32                          ;
 ;     CLR SLD           ; 1                           ;
-;     ENA               ; 321                         ;
+;     ENA               ; 294                         ;
 ;     ENA CLR           ; 302                         ;
 ;     ENA CLR SCLR      ; 32                          ;
-;     ENA SCLR          ; 8                           ;
-;     ENA SLD           ; 22                          ;
-;     plain             ; 809                         ;
+;     ENA SCLR          ; 32                          ;
+;     ENA SLD           ; 46                          ;
+;     plain             ; 810                         ;
 ; cycloneiii_io_obuf    ; 25                          ;
-; cycloneiii_lcell_comb ; 3293                        ;
-;     arith             ; 179                         ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 139                         ;
+; cycloneiii_lcell_comb ; 3367                        ;
+;     arith             ; 219                         ;
+;         2 data inputs ; 181                         ;
 ;         3 data inputs ; 38                          ;
-;     normal            ; 3114                        ;
-;         0 data inputs ; 4                           ;
-;         1 data inputs ; 19                          ;
-;         2 data inputs ; 105                         ;
-;         3 data inputs ; 588                         ;
-;         4 data inputs ; 2398                        ;
+;     normal            ; 3148                        ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 107                         ;
+;         3 data inputs ; 614                         ;
+;         4 data inputs ; 2404                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.10                       ;
-; Average LUT depth     ; 5.07                        ;
+; Max LUT depth         ; 8.30                        ;
+; Average LUT depth     ; 5.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1670,31 +1653,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Jul  2 22:26:10 2023
+    Info: Processing started: Thu Jul  6 23:35:04 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off usb_capture -c usb_capture
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 32 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_ctl.v
     Info (12023): Found entity 1: sdram_ctl File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/lib/async_fifo_1.v
-    Info (12023): Found entity 1: async_fifo_1 File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/lib/async_fifo_1.v Line: 45
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdram-controller/rtl/sdram_controller.v
-    Info (12023): Found entity 1: sdram_controller File: D:/Projects/usb_capture/fpga/3rd_parties/sdram-controller/rtl/sdram_controller.v Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/lib/sync_fifo.v
-    Info (12023): Found entity 1: sync_fifo File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/lib/sync_fifo.v Line: 42
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v
-    Info (12023): Found entity 1: sdrc_xfr_ctl File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 66
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v
-    Info (12023): Found entity 1: sdrc_req_gen File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v Line: 80
-Info (12021): Found 0 design units, including 0 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_define.v
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_bs_convert.v
-    Info (12023): Found entity 1: sdrc_bs_convert File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bs_convert.v Line: 52
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v
-    Info (12023): Found entity 1: sdrc_bank_fsm File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 49
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v
-    Info (12023): Found entity 1: sdrc_bank_ctl File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 49
-Info (12021): Found 1 design units, including 1 entities, in source file 3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v
-    Info (12023): Found entity 1: sdrc_core File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 77
 Info (12021): Found 1 design units, including 1 entities, in source file bus_interleave_3ports.v
     Info (12023): Found entity 1: bus_interleave_3ports File: D:/Projects/usb_capture/fpga/bus_interleave_3ports.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rr_3req.v
@@ -1746,90 +1710,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file timer.v
 Warning (10229): Verilog HDL Expression warning at test_sdram.v(122): truncated literal to match 3 bits File: D:/Projects/usb_capture/fpga/test_sdram.v Line: 122
 Info (12021): Found 1 design units, including 1 entities, in source file test_sdram.v
     Info (12023): Found entity 1: test_sdram File: D:/Projects/usb_capture/fpga/test_sdram.v Line: 1
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(128) File: D:/Projects/usb_capture/fpga/sdram.v Line: 128
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(128) File: D:/Projects/usb_capture/fpga/sdram.v Line: 128
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(128) File: D:/Projects/usb_capture/fpga/sdram.v Line: 128
-Warning (10335): Unrecognized synthesis attribute "command_q" at sdram.v(128) File: D:/Projects/usb_capture/fpga/sdram.v Line: 128
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(128) File: D:/Projects/usb_capture/fpga/sdram.v Line: 128
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(129) File: D:/Projects/usb_capture/fpga/sdram.v Line: 129
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(129) File: D:/Projects/usb_capture/fpga/sdram.v Line: 129
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(129) File: D:/Projects/usb_capture/fpga/sdram.v Line: 129
-Warning (10335): Unrecognized synthesis attribute "addr_q" at sdram.v(129) File: D:/Projects/usb_capture/fpga/sdram.v Line: 129
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(129) File: D:/Projects/usb_capture/fpga/sdram.v Line: 129
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(130) File: D:/Projects/usb_capture/fpga/sdram.v Line: 130
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(130) File: D:/Projects/usb_capture/fpga/sdram.v Line: 130
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(130) File: D:/Projects/usb_capture/fpga/sdram.v Line: 130
-Warning (10335): Unrecognized synthesis attribute "dqm_q" at sdram.v(130) File: D:/Projects/usb_capture/fpga/sdram.v Line: 130
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(130) File: D:/Projects/usb_capture/fpga/sdram.v Line: 130
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(131) File: D:/Projects/usb_capture/fpga/sdram.v Line: 131
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(131) File: D:/Projects/usb_capture/fpga/sdram.v Line: 131
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(131) File: D:/Projects/usb_capture/fpga/sdram.v Line: 131
-Warning (10335): Unrecognized synthesis attribute "cke_q" at sdram.v(131) File: D:/Projects/usb_capture/fpga/sdram.v Line: 131
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(131) File: D:/Projects/usb_capture/fpga/sdram.v Line: 131
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(132) File: D:/Projects/usb_capture/fpga/sdram.v Line: 132
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(132) File: D:/Projects/usb_capture/fpga/sdram.v Line: 132
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(132) File: D:/Projects/usb_capture/fpga/sdram.v Line: 132
-Warning (10335): Unrecognized synthesis attribute "bank_q" at sdram.v(132) File: D:/Projects/usb_capture/fpga/sdram.v Line: 132
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(132) File: D:/Projects/usb_capture/fpga/sdram.v Line: 132
-Warning (10335): Unrecognized synthesis attribute "attribute" at sdram.v(133) File: D:/Projects/usb_capture/fpga/sdram.v Line: 133
-Warning (10335): Unrecognized synthesis attribute "IOB" at sdram.v(133) File: D:/Projects/usb_capture/fpga/sdram.v Line: 133
-Warning (10335): Unrecognized synthesis attribute "of" at sdram.v(133) File: D:/Projects/usb_capture/fpga/sdram.v Line: 133
-Warning (10335): Unrecognized synthesis attribute "data_q" at sdram.v(133) File: D:/Projects/usb_capture/fpga/sdram.v Line: 133
-Warning (10335): Unrecognized synthesis attribute "is" at sdram.v(133) File: D:/Projects/usb_capture/fpga/sdram.v Line: 133
-Info (12021): Found 1 design units, including 1 entities, in source file sdram.v
-    Info (12023): Found entity 1: sdram File: D:/Projects/usb_capture/fpga/sdram.v Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_peri.v
     Info (12023): Found entity 1: sdram_peri File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 1
-Warning (10229): Verilog HDL Expression warning at test_sdram_peri.v(305): truncated literal to match 8 bits File: D:/Projects/usb_capture/fpga/test_sdram_peri.v Line: 305
+Warning (10275): Verilog HDL Module Instantiation warning at test_sdram_peri.v(72): ignored dangling comma in List of Port Connections File: D:/Projects/usb_capture/fpga/test_sdram_peri.v Line: 72
+Warning (10229): Verilog HDL Expression warning at test_sdram_peri.v(294): truncated literal to match 8 bits File: D:/Projects/usb_capture/fpga/test_sdram_peri.v Line: 294
 Info (12021): Found 1 design units, including 1 entities, in source file test_sdram_peri.v
     Info (12023): Found entity 1: test_sdram_peri File: D:/Projects/usb_capture/fpga/test_sdram_peri.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(278): created implicit net for "r2x_idle" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 278
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(290): created implicit net for "r2b_req" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 290
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(292): created implicit net for "r2b_start" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 292
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(293): created implicit net for "r2b_last" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 293
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(294): created implicit net for "r2b_wrap" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 294
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(299): created implicit net for "r2b_write" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 299
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(300): created implicit net for "b2r_ack" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 300
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(301): created implicit net for "b2r_arb_ok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 301
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(330): created implicit net for "b2x_idle" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 330
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(331): created implicit net for "b2x_req" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 331
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(332): created implicit net for "b2x_start" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 332
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(333): created implicit net for "b2x_last" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 333
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(334): created implicit net for "b2x_wrap" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 334
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(340): created implicit net for "x2b_ack" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 340
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(343): created implicit net for "b2x_tras_ok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 343
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(344): created implicit net for "x2b_refresh" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 344
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(346): created implicit net for "x2b_act_ok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 346
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(347): created implicit net for "x2b_rdok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 347
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(348): created implicit net for "x2b_wrok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 348
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(406): created implicit net for "x2a_rdstart" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 406
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(407): created implicit net for "x2a_wrstart" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 407
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(409): created implicit net for "x2a_rdlast" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 409
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(410): created implicit net for "x2a_wrlast" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 410
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(413): created implicit net for "x2a_wrnext" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 413
-Warning (10236): Verilog HDL Implicit Net warning at sdrc_core.v(415): created implicit net for "x2a_rdok" File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 415
+Info (12021): Found 0 design units, including 0 entities, in source file sdram_req_gen.v
 Warning (10236): Verilog HDL Implicit Net warning at test_sdram.v(65): created implicit net for "rst_n" File: D:/Projects/usb_capture/fpga/test_sdram.v Line: 65
-Warning (10037): Verilog HDL or VHDL warning at sdrc_xfr_ctl.v(144): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 144
-Warning (10037): Verilog HDL or VHDL warning at sdrc_xfr_ctl.v(199): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 199
-Warning (10037): Verilog HDL or VHDL warning at sdrc_xfr_ctl.v(200): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 200
-Warning (10037): Verilog HDL or VHDL warning at sdrc_xfr_ctl.v(287): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 287
-Warning (10037): Verilog HDL or VHDL warning at sdrc_xfr_ctl.v(291): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_xfr_ctl.v Line: 291
-Warning (10037): Verilog HDL or VHDL warning at sdrc_req_gen.v(167): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v Line: 167
-Warning (10037): Verilog HDL or VHDL warning at sdrc_req_gen.v(145): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v Line: 145
-Warning (10037): Verilog HDL or VHDL warning at sdrc_req_gen.v(163): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_req_gen.v Line: 163
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_fsm.v(105): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 105
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_fsm.v(143): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 143
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_fsm.v(114): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 114
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_fsm.v(142): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 142
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_fsm.v(277): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_fsm.v Line: 277
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(110): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 110
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(147): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 147
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(120): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 120
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(139): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 139
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(232): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 232
-Warning (10037): Verilog HDL or VHDL warning at sdrc_bank_ctl.v(356): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_bank_ctl.v Line: 356
-Warning (10037): Verilog HDL or VHDL warning at sdrc_core.v(207): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 207
-Warning (10037): Verilog HDL or VHDL warning at sdrc_core.v(213): conditional expression evaluates to a constant File: D:/Projects/usb_capture/fpga/3rd_parties/sdr_ctrl/rtl/core/sdrc_core.v Line: 213
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10034): Output port "LED" at top.v(3) has no driver File: D:/Projects/usb_capture/fpga/top.v Line: 3
 Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_0" File: D:/Projects/usb_capture/fpga/top.v Line: 138
@@ -1911,23 +1799,17 @@ Warning (10240): Verilog HDL Always Construct warning at led_slave.v(47): inferr
 Info (12128): Elaborating entity "timer" for hierarchy "timer:timer0" File: D:/Projects/usb_capture/fpga/top.v Line: 239
 Warning (10230): Verilog HDL assignment warning at timer.v(27): truncated value with size 32 to match size of target (1) File: D:/Projects/usb_capture/fpga/timer.v Line: 27
 Info (12128): Elaborating entity "sdram_peri" for hierarchy "sdram_peri:ram_peri" File: D:/Projects/usb_capture/fpga/top.v Line: 271
-Warning (10036): Verilog HDL or VHDL warning at sdram_peri.v(38): object "app_wr_en_n" assigned a value but never read File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 38
-Warning (10855): Verilog HDL warning at sdram_peri.v(110): initial value for variable data should be constant File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 110
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(181): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 181
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(243): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 243
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(251): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 251
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(252): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 252
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(272): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 272
-Warning (10230): Verilog HDL assignment warning at sdram_peri.v(280): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 280
-Warning (10034): Output port "p_app_req_len" at sdram_peri.v(30) has no driver File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 30
-Warning (10034): Output port "p_cmd_winc" at sdram_peri.v(23) has no driver File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 23
-Warning (10034): Output port "p_read_fifo_rempty" at sdram_peri.v(27) has no driver File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 27
-Warning (10034): Output port "p_app_rd_valid" at sdram_peri.v(28) has no driver File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 28
-Info (12128): Elaborating entity "sdram_ctl" for hierarchy "sdram_peri:ram_peri|sdram_ctl:ram" File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 108
-Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(172): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 172
-Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(263): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 263
-Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(309): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 309
-Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(346): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 346
+Warning (10036): Verilog HDL or VHDL warning at sdram_peri.v(29): object "app_wr_en_n" assigned a value but never read File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 29
+Warning (10855): Verilog HDL warning at sdram_peri.v(96): initial value for variable data should be constant File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 96
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(167): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 167
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(229): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 229
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(237): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 237
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(238): truncated value with size 32 to match size of target (16) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 238
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(258): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 258
+Warning (10230): Verilog HDL assignment warning at sdram_peri.v(266): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 266
+Info (12128): Elaborating entity "sdram_ctl" for hierarchy "sdram_peri:ram_peri|sdram_ctl:ram" File: D:/Projects/usb_capture/fpga/sdram_peri.v Line: 94
+Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(175): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 175
+Warning (10230): Verilog HDL assignment warning at sdram_ctl.v(371): truncated value with size 32 to match size of target (8) File: D:/Projects/usb_capture/fpga/sdram_ctl.v Line: 371
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "bm_dat_r[7]" into a selector File: D:/Projects/usb_capture/fpga/bus_master.v Line: 13
     Warning (13048): Converted tri-state node "bm_dat_r[6]" into a selector File: D:/Projects/usb_capture/fpga/bus_master.v Line: 13
@@ -1988,7 +1870,7 @@ Info (12133): Instantiated megafunction "syncFT245:ft245_bus|async_fifo:incoming
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mmd1.tdf
     Info (12023): Found entity 1: altsyncram_mmd1 File: D:/Projects/usb_capture/fpga/db/altsyncram_mmd1.tdf Line: 28
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "ftdi_siwua_n" is fed by VCC File: D:/Projects/usb_capture/fpga/top.v Line: 11
 Info (13000): Registers with preset signals will power-up high File: D:/Projects/usb_capture/fpga/syncFT245.v Line: 6
@@ -2007,22 +1889,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: D:/Projects/usb_capture/fpga/top.v Line: 14
     Warning (13410): Pin "DRAM_CKE" is stuck at VCC File: D:/Projects/usb_capture/fpga/top.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 32 registers lost all their fanouts during netlist optimizations.
+Info (17049): 48 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/Projects/usb_capture/fpga/usb_capture.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3910 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3967 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 37 output pins
     Info (21060): Implemented 25 bidirectional pins
-    Info (21061): Implemented 3827 logic cells
+    Info (21061): Implemented 3884 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 128 warnings
-    Info: Peak virtual memory: 4967 megabytes
-    Info: Processing ended: Sun Jul  2 22:26:27 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 4959 megabytes
+    Info: Processing ended: Thu Jul  6 23:35:18 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:12
 
 
 +------------------------------------------+

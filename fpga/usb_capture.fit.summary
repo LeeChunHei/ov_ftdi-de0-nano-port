@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Jul  2 22:26:37 2023
+Fitter Status : Successful - Thu Jul  6 23:35:25 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : usb_capture
 Top-level Entity Name : top
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 3,549 / 22,320 ( 16 % )
-    Total combinational functions : 3,284 / 22,320 ( 15 % )
-    Dedicated logic registers : 1,716 / 22,320 ( 8 % )
-Total registers : 1716
+Total logic elements : 3,605 / 22,320 ( 16 % )
+    Total combinational functions : 3,358 / 22,320 ( 15 % )
+    Dedicated logic registers : 1,737 / 22,320 ( 8 % )
+Total registers : 1737
 Total pins : 66 / 154 ( 43 % )
 Total virtual pins : 0
 Total memory bits : 1,024 / 608,256 ( < 1 % )

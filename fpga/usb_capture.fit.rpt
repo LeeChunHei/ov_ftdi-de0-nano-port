@@ -1,5 +1,5 @@
 Fitter report for usb_capture
-Sun Jul  2 22:26:37 2023
+Thu Jul  6 23:35:25 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -44,10 +44,8 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
  36. I/O Rules Matrix
  37. Fitter Device Options
  38. Operating Settings and Conditions
- 39. Estimated Delay Added for Hold Timing Summary
- 40. Estimated Delay Added for Hold Timing Details
- 41. Fitter Messages
- 42. Fitter Suppressed Messages
+ 39. Fitter Messages
+ 40. Fitter Suppressed Messages
 
 
 
@@ -74,17 +72,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jul  2 22:26:37 2023          ;
+; Fitter Status                      ; Successful - Thu Jul  6 23:35:25 2023          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; usb_capture                                    ;
 ; Top-level Entity Name              ; top                                            ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE22F17C6                                   ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 3,549 / 22,320 ( 16 % )                        ;
-;     Total combinational functions  ; 3,284 / 22,320 ( 15 % )                        ;
-;     Dedicated logic registers      ; 1,716 / 22,320 ( 8 % )                         ;
-; Total registers                    ; 1716                                           ;
+; Total logic elements               ; 3,605 / 22,320 ( 16 % )                        ;
+;     Total combinational functions  ; 3,358 / 22,320 ( 15 % )                        ;
+;     Dedicated logic registers      ; 1,737 / 22,320 ( 8 % )                         ;
+; Total registers                    ; 1737                                           ;
 ; Total pins                         ; 66 / 154 ( 43 % )                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 1,024 / 608,256 ( < 1 % )                      ;
@@ -165,11 +163,11 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.6%      ;
-;     Processor 3            ;   2.5%      ;
-;     Processor 4            ;   2.4%      ;
-;     Processor 5            ;   2.4%      ;
-;     Processor 6            ;   2.3%      ;
+;     Processor 2            ;   2.5%      ;
+;     Processor 3            ;   2.4%      ;
+;     Processor 4            ;   2.3%      ;
+;     Processor 5            ;   2.3%      ;
+;     Processor 6            ;   2.2%      ;
 ;     Processor 7            ;   2.2%      ;
 ;     Processor 8            ;   2.2%      ;
 ;     Processors 9-16        ;   2.0%      ;
@@ -366,8 +364,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 5176 ) ; 0.00 % ( 0 / 5176 )        ; 0.00 % ( 0 / 5176 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 5176 ) ; 0.00 % ( 0 / 5176 )        ; 0.00 % ( 0 / 5176 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 5271 ) ; 0.00 % ( 0 / 5271 )        ; 0.00 % ( 0 / 5271 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 5271 ) ; 0.00 % ( 0 / 5271 )        ; 0.00 % ( 0 / 5271 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -390,7 +388,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 5174 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 5269 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 2 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -406,26 +404,26 @@ The pin-out file can be found in D:/Projects/usb_capture/fpga/usb_capture.pin.
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 3,549 / 22,320 ( 16 % )   ;
-;     -- Combinational with no register       ; 1833                      ;
-;     -- Register only                        ; 265                       ;
-;     -- Combinational with a register        ; 1451                      ;
+; Total logic elements                        ; 3,605 / 22,320 ( 16 % )   ;
+;     -- Combinational with no register       ; 1868                      ;
+;     -- Register only                        ; 247                       ;
+;     -- Combinational with a register        ; 1490                      ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 2398                      ;
-;     -- 3 input functions                    ; 626                       ;
-;     -- <=2 input functions                  ; 260                       ;
-;     -- Register only                        ; 265                       ;
+;     -- 4 input functions                    ; 2404                      ;
+;     -- 3 input functions                    ; 652                       ;
+;     -- <=2 input functions                  ; 302                       ;
+;     -- Register only                        ; 247                       ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 3105                      ;
-;     -- arithmetic mode                      ; 179                       ;
+;     -- normal mode                          ; 3139                      ;
+;     -- arithmetic mode                      ; 219                       ;
 ;                                             ;                           ;
-; Total registers*                            ; 1,716 / 23,018 ( 7 % )    ;
-;     -- Dedicated logic registers            ; 1,716 / 22,320 ( 8 % )    ;
+; Total registers*                            ; 1,737 / 23,018 ( 8 % )    ;
+;     -- Dedicated logic registers            ; 1,737 / 22,320 ( 8 % )    ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )           ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 271 / 1,395 ( 19 % )      ;
+; Total LABs:  partially or completely used   ; 273 / 1,395 ( 20 % )      ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 66 / 154 ( 43 % )         ;
 ;     -- Clock pins                           ; 2 / 7 ( 29 % )            ;
@@ -443,12 +441,12 @@ The pin-out file can be found in D:/Projects/usb_capture/fpga/usb_capture.pin.
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )             ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
-; Average interconnect usage (total/H/V)      ; 5.6% / 5.3% / 5.9%        ;
-; Peak interconnect usage (total/H/V)         ; 28.8% / 24.9% / 34.4%     ;
-; Maximum fan-out                             ; 1649                      ;
+; Average interconnect usage (total/H/V)      ; 7.9% / 7.6% / 8.3%        ;
+; Peak interconnect usage (total/H/V)         ; 45.3% / 42.8% / 48.9%     ;
+; Maximum fan-out                             ; 1670                      ;
 ; Highest non-global fan-out                  ; 728                       ;
-; Total fan-out                               ; 17181                     ;
-; Average fan-out                             ; 3.20                      ;
+; Total fan-out                               ; 17481                     ;
+; Average fan-out                             ; 3.21                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -461,26 +459,26 @@ The pin-out file can be found in D:/Projects/usb_capture/fpga/usb_capture.pin.
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 3549 / 22320 ( 16 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 1833                  ; 0                              ;
-;     -- Register only                        ; 265                   ; 0                              ;
-;     -- Combinational with a register        ; 1451                  ; 0                              ;
+; Total logic elements                        ; 3605 / 22320 ( 16 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 1868                  ; 0                              ;
+;     -- Register only                        ; 247                   ; 0                              ;
+;     -- Combinational with a register        ; 1490                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 2398                  ; 0                              ;
-;     -- 3 input functions                    ; 626                   ; 0                              ;
-;     -- <=2 input functions                  ; 260                   ; 0                              ;
-;     -- Register only                        ; 265                   ; 0                              ;
+;     -- 4 input functions                    ; 2404                  ; 0                              ;
+;     -- 3 input functions                    ; 652                   ; 0                              ;
+;     -- <=2 input functions                  ; 302                   ; 0                              ;
+;     -- Register only                        ; 247                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 3105                  ; 0                              ;
-;     -- arithmetic mode                      ; 179                   ; 0                              ;
+;     -- normal mode                          ; 3139                  ; 0                              ;
+;     -- arithmetic mode                      ; 219                   ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 1716                  ; 0                              ;
-;     -- Dedicated logic registers            ; 1716 / 22320 ( 8 % )  ; 0 / 22320 ( 0 % )              ;
+; Total registers                             ; 1737                  ; 0                              ;
+;     -- Dedicated logic registers            ; 1737 / 22320 ( 8 % )  ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 271 / 1395 ( 19 % )   ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 273 / 1395 ( 20 % )   ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 66                    ; 0                              ;
@@ -492,18 +490,18 @@ The pin-out file can be found in D:/Projects/usb_capture/fpga/usb_capture.pin.
 ; Clock control block                         ; 1 / 24 ( 4 % )        ; 1 / 24 ( 4 % )                 ;
 ;                                             ;                       ;                                ;
 ; Connections                                 ;                       ;                                ;
-;     -- Input Connections                    ; 2325                  ; 1                              ;
-;     -- Registered Input Connections         ; 2279                  ; 0                              ;
-;     -- Output Connections                   ; 26                    ; 2300                           ;
+;     -- Input Connections                    ; 2344                  ; 1                              ;
+;     -- Registered Input Connections         ; 2296                  ; 0                              ;
+;     -- Output Connections                   ; 26                    ; 2319                           ;
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 17186                 ; 2303                           ;
-;     -- Registered Connections               ; 8844                  ; 0                              ;
+;     -- Total Connections                    ; 17486                 ; 2322                           ;
+;     -- Registered Connections               ; 9000                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
-;     -- Top                                  ; 50                    ; 2301                           ;
-;     -- hard_block:auto_generated_inst       ; 2301                  ; 0                              ;
+;     -- Top                                  ; 50                    ; 2320                           ;
+;     -- hard_block:auto_generated_inst       ; 2320                  ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
 ;     -- Input Ports                          ; 4                     ; 1                              ;
@@ -1040,31 +1038,31 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                   ; Entity Name     ; Library Name ;
 +-------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |top                                            ; 3549 (0)    ; 1716 (0)                  ; 0 (0)         ; 1024        ; 2    ; 0            ; 0       ; 0         ; 66   ; 0            ; 1833 (0)     ; 265 (0)           ; 1451 (0)         ; |top                                                                                                                  ; top             ; work         ;
-;    |bus_decode:bdec|                            ; 56 (56)     ; 54 (54)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 45 (45)           ; 9 (9)            ; |top|bus_decode:bdec                                                                                                  ; bus_decode      ; work         ;
-;    |bus_encode:benc|                            ; 76 (76)     ; 70 (70)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 26 (26)           ; 44 (44)          ; |top|bus_encode:benc                                                                                                  ; bus_encode      ; work         ;
-;    |bus_master:bm|                              ; 54 (54)     ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 24 (24)           ; 27 (27)          ; |top|bus_master:bm                                                                                                    ; bus_master      ; work         ;
-;    |led_slave:led_peri|                         ; 50 (50)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 14 (14)           ; 26 (26)          ; |top|led_slave:led_peri                                                                                               ; led_slave       ; work         ;
+; |top                                            ; 3605 (0)    ; 1737 (0)                  ; 0 (0)         ; 1024        ; 2    ; 0            ; 0       ; 0         ; 66   ; 0            ; 1868 (0)     ; 247 (0)           ; 1490 (0)         ; |top                                                                                                                  ; top             ; work         ;
+;    |bus_decode:bdec|                            ; 59 (59)     ; 54 (54)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 45 (45)           ; 9 (9)            ; |top|bus_decode:bdec                                                                                                  ; bus_decode      ; work         ;
+;    |bus_encode:benc|                            ; 73 (73)     ; 70 (70)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 23 (23)           ; 48 (48)          ; |top|bus_encode:benc                                                                                                  ; bus_encode      ; work         ;
+;    |bus_master:bm|                              ; 54 (54)     ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 24 (24)           ; 29 (29)          ; |top|bus_master:bm                                                                                                    ; bus_master      ; work         ;
+;    |led_slave:led_peri|                         ; 49 (49)     ; 40 (40)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 13 (13)           ; 27 (27)          ; |top|led_slave:led_peri                                                                                               ; led_slave       ; work         ;
 ;    |pll:pll_0|                                  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll_0                                                                                                        ; pll             ; work         ;
 ;       |altpll:altpll_component|                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll_0|altpll:altpll_component                                                                                ; altpll          ; work         ;
 ;          |pll_altpll:auto_generated|            ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated                                                      ; pll_altpll      ; work         ;
-;    |sdram_peri:ram_peri|                        ; 3138 (2817) ; 1342 (1139)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1781 (1671)  ; 124 (63)          ; 1233 (1095)      ; |top|sdram_peri:ram_peri                                                                                              ; sdram_peri      ; work         ;
-;       |sdram_ctl:ram|                           ; 321 (321)   ; 203 (203)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 110 (110)    ; 61 (61)           ; 150 (150)        ; |top|sdram_peri:ram_peri|sdram_ctl:ram                                                                                ; sdram_ctl       ; work         ;
-;    |syncFT245:ft245_bus|                        ; 130 (20)    ; 126 (14)                  ; 0 (0)         ; 1024        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 32 (0)            ; 95 (15)          ; |top|syncFT245:ft245_bus                                                                                              ; syncFT245       ; work         ;
-;       |async_fifo:incoming_fifo|                ; 57 (0)      ; 56 (0)                    ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 17 (0)            ; 40 (0)           ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo                                                                     ; async_fifo      ; work         ;
-;          |fifomem:fifomem|                      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem                                                     ; fifomem         ; work         ;
+;    |sdram_peri:ram_peri|                        ; 3195 (2834) ; 1363 (1139)               ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1817 (1688)  ; 103 (68)          ; 1275 (1091)      ; |top|sdram_peri:ram_peri                                                                                              ; sdram_peri      ; work         ;
+;       |sdram_ctl:ram|                           ; 361 (361)   ; 224 (224)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 129 (129)    ; 35 (35)           ; 197 (197)        ; |top|sdram_peri:ram_peri|sdram_ctl:ram                                                                                ; sdram_ctl       ; work         ;
+;    |syncFT245:ft245_bus|                        ; 133 (19)    ; 126 (14)                  ; 0 (0)         ; 1024        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (5)        ; 39 (1)            ; 88 (13)          ; |top|syncFT245:ft245_bus                                                                                              ; syncFT245       ; work         ;
+;       |async_fifo:incoming_fifo|                ; 57 (0)      ; 56 (0)                    ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 19 (0)            ; 37 (0)           ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo                                                                     ; async_fifo      ; work         ;
+;          |fifomem:fifomem|                      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem                                                     ; fifomem         ; work         ;
 ;             |altsyncram:mem_rtl_0|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0                                ; altsyncram      ; work         ;
 ;                |altsyncram_mmd1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated ; altsyncram_mmd1 ; work         ;
 ;          |rptr_empty:rptr_empty|                ; 19 (19)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 19 (19)          ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty                                               ; rptr_empty      ; work         ;
-;          |sync_r2w:sync_r2w|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 5 (5)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w                                                   ; sync_r2w        ; work         ;
-;          |sync_w2r:sync_w2r|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 6 (6)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_w2r:sync_w2r                                                   ; sync_w2r        ; work         ;
-;          |wptr_full:wptr_full|                  ; 21 (21)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full                                                 ; wptr_full       ; work         ;
-;       |async_fifo:output_fifo|                  ; 58 (0)      ; 56 (0)                    ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 15 (0)            ; 43 (0)           ; |top|syncFT245:ft245_bus|async_fifo:output_fifo                                                                       ; async_fifo      ; work         ;
+;          |sync_r2w:sync_r2w|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (10)           ; 4 (4)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w                                                   ; sync_r2w        ; work         ;
+;          |sync_w2r:sync_w2r|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 5 (5)            ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_w2r:sync_w2r                                                   ; sync_w2r        ; work         ;
+;          |wptr_full:wptr_full|                  ; 18 (18)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 18 (18)          ; |top|syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full                                                 ; wptr_full       ; work         ;
+;       |async_fifo:output_fifo|                  ; 57 (0)      ; 56 (0)                    ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 19 (0)            ; 38 (0)           ; |top|syncFT245:ft245_bus|async_fifo:output_fifo                                                                       ; async_fifo      ; work         ;
 ;          |fifomem:fifomem|                      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem                                                       ; fifomem         ; work         ;
 ;             |altsyncram:mem_rtl_0|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0                                  ; altsyncram      ; work         ;
 ;                |altsyncram_mmd1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 512         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated   ; altsyncram_mmd1 ; work         ;
-;          |rptr_empty:rptr_empty|                ; 21 (21)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 21 (21)          ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|rptr_empty:rptr_empty                                                 ; rptr_empty      ; work         ;
-;          |sync_r2w:sync_r2w|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 8 (8)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|sync_r2w:sync_r2w                                                     ; sync_r2w        ; work         ;
+;          |rptr_empty:rptr_empty|                ; 19 (19)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 19 (19)          ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|rptr_empty:rptr_empty                                                 ; rptr_empty      ; work         ;
+;          |sync_r2w:sync_r2w|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 10 (10)           ; 4 (4)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|sync_r2w:sync_r2w                                                     ; sync_r2w        ; work         ;
 ;          |sync_w2r:sync_w2r|                    ; 14 (14)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 5 (5)            ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r                                                     ; sync_w2r        ; work         ;
 ;          |wptr_full:wptr_full|                  ; 18 (18)     ; 14 (14)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 18 (18)          ; |top|syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full                                                   ; wptr_full       ; work         ;
 ;    |timer:timer0|                               ; 61 (61)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (28)      ; 0 (0)             ; 33 (33)          ; |top|timer:timer0                                                                                                     ; timer           ; work         ;
@@ -1114,34 +1112,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DRAM_ADDR[11] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DRAM_ADDR[12] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DRAM_CLK      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ftdi_d[0]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; ftdi_d[1]     ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; ftdi_d[2]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; ftdi_d[0]     ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; ftdi_d[1]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; ftdi_d[2]     ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; ftdi_d[3]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; ftdi_d[4]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; ftdi_d[5]     ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; ftdi_d[6]     ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; ftdi_d[5]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; ftdi_d[6]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; ftdi_d[7]     ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; ftdi_siwua_n  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; DRAM_DQ[0]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; DRAM_DQ[1]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; DRAM_DQ[1]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; DRAM_DQ[2]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; DRAM_DQ[3]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; DRAM_DQ[4]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; DRAM_DQ[5]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; DRAM_DQ[6]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[3]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[4]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[5]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; DRAM_DQ[6]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; DRAM_DQ[7]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; DRAM_DQ[8]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; DRAM_DQ[9]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; DRAM_DQ[10]   ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; DRAM_DQ[11]   ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; DRAM_DQ[12]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[8]    ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[9]    ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; DRAM_DQ[10]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[11]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; DRAM_DQ[12]   ; Bidir    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; DRAM_DQ[13]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; DRAM_DQ[14]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; DRAM_DQ[15]   ; Bidir    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; ftdi_rxf_n    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; ftdi_clk      ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; ftdi_txe_n    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; ftdi_txe_n    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLOCK_50      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1152,54 +1150,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                                                                                  ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 ; ftdi_d[0]                                                                                                                            ;                   ;         ;
-;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
-; ftdi_d[1]                                                                                                                            ;                   ;         ;
 ;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
-; ftdi_d[2]                                                                                                                            ;                   ;         ;
+; ftdi_d[1]                                                                                                                            ;                   ;         ;
 ;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
+; ftdi_d[2]                                                                                                                            ;                   ;         ;
+;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
 ; ftdi_d[3]                                                                                                                            ;                   ;         ;
 ;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; ftdi_d[4]                                                                                                                            ;                   ;         ;
 ;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; ftdi_d[5]                                                                                                                            ;                   ;         ;
-;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
+;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; ftdi_d[6]                                                                                                                            ;                   ;         ;
-;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 1                 ; 6       ;
+;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; ftdi_d[7]                                                                                                                            ;                   ;         ;
 ;      - syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0 ; 0                 ; 6       ;
 ; ftdi_siwua_n                                                                                                                         ;                   ;         ;
 ; DRAM_DQ[0]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[0]~feeder                                                                             ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[0]                                                                                    ; 0                 ; 6       ;
 ; DRAM_DQ[1]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[1]~feeder                                                                             ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[1]~feeder                                                                             ; 0                 ; 6       ;
 ; DRAM_DQ[2]                                                                                                                           ;                   ;         ;
 ;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[2]~feeder                                                                             ; 0                 ; 6       ;
 ; DRAM_DQ[3]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[3]                                                                                    ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[3]~feeder                                                                             ; 0                 ; 6       ;
 ; DRAM_DQ[4]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[4]~feeder                                                                             ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[4]~feeder                                                                             ; 0                 ; 6       ;
 ; DRAM_DQ[5]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[5]~feeder                                                                             ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[5]                                                                                    ; 1                 ; 6       ;
 ; DRAM_DQ[6]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[6]~feeder                                                                             ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[6]~feeder                                                                             ; 1                 ; 6       ;
 ; DRAM_DQ[7]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[7]~feeder                                                                             ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[7]                                                                                    ; 0                 ; 6       ;
 ; DRAM_DQ[8]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[8]                                                                                    ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[8]                                                                                    ; 0                 ; 6       ;
 ; DRAM_DQ[9]                                                                                                                           ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[9]                                                                                    ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[9]~feeder                                                                             ; 1                 ; 6       ;
 ; DRAM_DQ[10]                                                                                                                          ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[10]~feeder                                                                            ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[10]~feeder                                                                            ; 0                 ; 6       ;
 ; DRAM_DQ[11]                                                                                                                          ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[11]~feeder                                                                            ; 1                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[11]~feeder                                                                            ; 0                 ; 6       ;
 ; DRAM_DQ[12]                                                                                                                          ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[12]~feeder                                                                            ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[12]~feeder                                                                            ; 1                 ; 6       ;
 ; DRAM_DQ[13]                                                                                                                          ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[13]~feeder                                                                            ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[13]                                                                                   ; 0                 ; 6       ;
 ; DRAM_DQ[14]                                                                                                                          ;                   ;         ;
 ;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[14]                                                                                   ; 0                 ; 6       ;
 ; DRAM_DQ[15]                                                                                                                          ;                   ;         ;
-;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[15]~feeder                                                                            ; 0                 ; 6       ;
+;      - sdram_peri:ram_peri|sdram_ctl:ram|dq_rd[15]                                                                                   ; 0                 ; 6       ;
 ; ftdi_rxf_n                                                                                                                           ;                   ;         ;
 ;      - syncFT245:ft245_bus|io_rd_n~0                                                                                                 ; 0                 ; 6       ;
 ;      - syncFT245:ft245_bus|Selector7~0                                                                                               ; 0                 ; 6       ;
@@ -1208,11 +1206,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - syncFT245:ft245_bus|Selector2~4                                                                                               ; 0                 ; 6       ;
 ; ftdi_clk                                                                                                                             ;                   ;         ;
 ; ftdi_txe_n                                                                                                                           ;                   ;         ;
-;      - syncFT245:ft245_bus|io_wr_n~0                                                                                                 ; 1                 ; 6       ;
-;      - syncFT245:ft245_bus|Selector3~0                                                                                               ; 1                 ; 6       ;
-;      - syncFT245:ft245_bus|Selector7~1                                                                                               ; 1                 ; 6       ;
-;      - syncFT245:ft245_bus|can_write                                                                                                 ; 1                 ; 6       ;
-;      - syncFT245:ft245_bus|Selector4~0                                                                                               ; 1                 ; 6       ;
+;      - syncFT245:ft245_bus|io_wr_n~0                                                                                                 ; 0                 ; 6       ;
+;      - syncFT245:ft245_bus|Selector3~0                                                                                               ; 0                 ; 6       ;
+;      - syncFT245:ft245_bus|Selector7~1                                                                                               ; 0                 ; 6       ;
+;      - syncFT245:ft245_bus|can_write                                                                                                 ; 0                 ; 6       ;
+;      - syncFT245:ft245_bus|Selector4~0                                                                                               ; 0                 ; 6       ;
 ; CLOCK_50                                                                                                                             ;                   ;         ;
 +--------------------------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
@@ -1223,86 +1221,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                         ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                                                     ; PIN_R8             ; 1       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; bus_decode:bdec|next_source_a[1]~0                                           ; LCCOMB_X36_Y7_N22  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_decode:bdec|next_source_d[3]~0                                           ; LCCOMB_X36_Y7_N26  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_decode:bdec|next_source_wr~0                                             ; LCCOMB_X36_Y7_N6   ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_decode:bdec|sink_ack                                                     ; FF_X36_Y7_N5       ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_encode:benc|next_token_a[8]~1                                            ; LCCOMB_X38_Y5_N16  ; 23      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_encode:benc|source_d[0]~3                                                ; LCCOMB_X38_Y5_N14  ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_master:bm|always0~0                                                      ; LCCOMB_X37_Y8_N16  ; 9       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; bus_master:bm|dat_w[3]~0                                                     ; LCCOMB_X31_Y13_N8  ; 23      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_master:bm|source_a[8]~0                                                  ; LCCOMB_X37_Y7_N20  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; bus_master:bm|source_d[0]~8                                                  ; LCCOMB_X37_Y7_N2   ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_decode:bdec|next_source_a[1]~0                                           ; LCCOMB_X32_Y13_N26 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_decode:bdec|next_source_d[3]~0                                           ; LCCOMB_X32_Y13_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_decode:bdec|next_source_wr~0                                             ; LCCOMB_X32_Y13_N22 ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_decode:bdec|sink_ack                                                     ; FF_X35_Y17_N13     ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_encode:benc|next_token_a[8]~1                                            ; LCCOMB_X32_Y13_N0  ; 23      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_encode:benc|source_d[0]~3                                                ; LCCOMB_X32_Y12_N22 ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_master:bm|always0~0                                                      ; LCCOMB_X27_Y12_N12 ; 9       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; bus_master:bm|dat_w[3]~0                                                     ; LCCOMB_X32_Y13_N18 ; 23      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_master:bm|source_a[8]~0                                                  ; LCCOMB_X32_Y13_N6  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; bus_master:bm|source_d[0]~8                                                  ; LCCOMB_X30_Y13_N16 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; ftdi_clk                                                                     ; PIN_T9             ; 72      ; Clock                      ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; led_slave:led_peri|Equal0~0                                                  ; LCCOMB_X35_Y10_N2  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; led_slave:led_peri|internal_reg[0][2]~5                                      ; LCCOMB_X37_Y10_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; led_slave:led_peri|internal_reg[1][3]~3                                      ; LCCOMB_X37_Y10_N26 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; led_slave:led_peri|internal_reg[2][3]~7                                      ; LCCOMB_X36_Y10_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; led_slave:led_peri|internal_reg[3][3]~8                                      ; LCCOMB_X36_Y10_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 1649    ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_locked ; PLL_4              ; 651     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|Equal0~1                                                 ; LCCOMB_X35_Y10_N10 ; 35      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|app_req_len[7]~0                                         ; LCCOMB_X30_Y10_N12 ; 33      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|dat_r[7]~9                                               ; LCCOMB_X35_Y10_N12 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[0][0]~118                                           ; LCCOMB_X31_Y12_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[0][16]~956                                          ; LCCOMB_X36_Y19_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[0][24]~932                                          ; LCCOMB_X36_Y19_N20 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[0][8]~469                                           ; LCCOMB_X27_Y14_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[1][0]~116                                           ; LCCOMB_X35_Y19_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[1][16]~954                                          ; LCCOMB_X35_Y19_N16 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[1][24]~931                                          ; LCCOMB_X40_Y18_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[1][8]~534                                           ; LCCOMB_X35_Y19_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[2][0]~117                                           ; LCCOMB_X32_Y15_N22 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[2][16]~952                                          ; LCCOMB_X38_Y19_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[2][24]~930                                          ; LCCOMB_X37_Y16_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[2][8]~535                                           ; LCCOMB_X29_Y20_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[3][0]~119                                           ; LCCOMB_X29_Y14_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[3][16]~950                                          ; LCCOMB_X38_Y19_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[3][24]~933                                          ; LCCOMB_X34_Y15_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[3][8]~536                                           ; LCCOMB_X29_Y16_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[4][0]~102                                           ; LCCOMB_X39_Y18_N0  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[4][16]~955                                          ; LCCOMB_X36_Y19_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[4][24]~928                                          ; LCCOMB_X36_Y18_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[4][8]~520                                           ; LCCOMB_X25_Y20_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[5][0]~101                                           ; LCCOMB_X32_Y15_N20 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[5][16]~957                                          ; LCCOMB_X39_Y18_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[5][24]~926                                          ; LCCOMB_X40_Y18_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[5][8]~519                                           ; LCCOMB_X25_Y21_N0  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[6][0]~100                                           ; LCCOMB_X28_Y15_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[6][16]~951                                          ; LCCOMB_X37_Y18_N22 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[6][24]~927                                          ; LCCOMB_X36_Y18_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[6][8]~518                                           ; LCCOMB_X25_Y18_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[7][0]~103                                           ; LCCOMB_X28_Y15_N18 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[7][16]~953                                          ; LCCOMB_X39_Y18_N20 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[7][24]~929                                          ; LCCOMB_X38_Y18_N10 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|data[7][8]~521                                           ; LCCOMB_X25_Y18_N16 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|req_addr[0]~8                                            ; LCCOMB_X31_Y10_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|req_addr[22]~5                                           ; LCCOMB_X30_Y10_N18 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|req_addr[24]~7                                           ; LCCOMB_X35_Y10_N0  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|req_addr[9]~6                                            ; LCCOMB_X31_Y10_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|req_len[7]~1                                             ; LCCOMB_X34_Y9_N16  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|Selector105~10                             ; LCCOMB_X31_Y4_N30  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|Selector137~1                              ; LCCOMB_X21_Y4_N0   ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|Selector79~2                               ; LCCOMB_X20_Y4_N12  ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|active_addr[22]~1                          ; LCCOMB_X31_Y4_N20  ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|app_rd_data[0]~0                           ; LCCOMB_X19_Y7_N0   ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|dq[0]~0                                    ; LCCOMB_X20_Y7_N0   ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|dq_out[0]                                  ; FF_X19_Y7_N23      ; 17      ; Output enable              ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|io_addr[0]~1                               ; LCCOMB_X24_Y5_N2   ; 12      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|next_state.WRITE~1                         ; LCCOMB_X19_Y4_N8   ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|state.ACTIVE                               ; FF_X20_Y4_N31      ; 30      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|state.READ                                 ; FF_X20_Y4_N11      ; 10      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|state.READ_BURST                           ; FF_X20_Y4_N29      ; 17      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|time_counter[2]~98                         ; LCCOMB_X17_Y4_N22  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|time_counter[2]~99                         ; LCCOMB_X23_Y4_N2   ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|sdram_ctl:ram|xfer_cnt[7]~24                             ; LCCOMB_X24_Y5_N8   ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sdram_peri:ram_peri|state[0]~12                                              ; LCCOMB_X32_Y10_N20 ; 6       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|always0~0       ; LCCOMB_X31_Y7_N0   ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rempty    ; FF_X29_Y7_N13      ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|always0~0         ; LCCOMB_X38_Y5_N22  ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wfull         ; FF_X31_Y5_N15      ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|next_dOE                                                 ; FF_X37_Y5_N7       ; 9       ; Output enable              ; no     ; --                   ; --               ; --                        ;
-; syncFT245:ft245_bus|output_fifo_rinc                                         ; FF_X35_Y5_N1       ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; led_slave:led_peri|Equal0~0                                                  ; LCCOMB_X23_Y12_N0  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; led_slave:led_peri|internal_reg[0][2]~5                                      ; LCCOMB_X29_Y12_N22 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; led_slave:led_peri|internal_reg[1][3]~3                                      ; LCCOMB_X29_Y12_N18 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; led_slave:led_peri|internal_reg[2][3]~7                                      ; LCCOMB_X29_Y12_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; led_slave:led_peri|internal_reg[3][3]~8                                      ; LCCOMB_X29_Y10_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 1670    ; Clock                      ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_locked ; PLL_4              ; 649     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|Equal0~1                                                 ; LCCOMB_X23_Y12_N12 ; 36      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|app_req_len[0]~0                                         ; LCCOMB_X23_Y18_N16 ; 33      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|dat_r[7]~9                                               ; LCCOMB_X23_Y12_N2  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[0][0]~131                                           ; LCCOMB_X29_Y14_N18 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[0][16]~956                                          ; LCCOMB_X24_Y22_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[0][24]~932                                          ; LCCOMB_X24_Y22_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[0][8]~548                                           ; LCCOMB_X32_Y17_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[1][0]~116                                           ; LCCOMB_X23_Y15_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[1][16]~954                                          ; LCCOMB_X24_Y21_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[1][24]~931                                          ; LCCOMB_X25_Y11_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[1][8]~533                                           ; LCCOMB_X23_Y21_N18 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[2][0]~117                                           ; LCCOMB_X27_Y20_N26 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[2][16]~952                                          ; LCCOMB_X17_Y23_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[2][24]~930                                          ; LCCOMB_X24_Y22_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[2][8]~534                                           ; LCCOMB_X31_Y16_N22 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[3][0]~118                                           ; LCCOMB_X27_Y20_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[3][16]~950                                          ; LCCOMB_X17_Y23_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[3][24]~933                                          ; LCCOMB_X21_Y23_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[3][8]~535                                           ; LCCOMB_X38_Y16_N16 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[4][0]~114                                           ; LCCOMB_X31_Y18_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[4][16]~955                                          ; LCCOMB_X26_Y23_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[4][24]~928                                          ; LCCOMB_X23_Y23_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[4][8]~531                                           ; LCCOMB_X31_Y18_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[5][0]~113                                           ; LCCOMB_X32_Y22_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[5][16]~957                                          ; LCCOMB_X19_Y23_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[5][24]~926                                          ; LCCOMB_X23_Y23_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[5][8]~530                                           ; LCCOMB_X25_Y11_N8  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[6][0]~112                                           ; LCCOMB_X31_Y20_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[6][16]~951                                          ; LCCOMB_X20_Y23_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[6][24]~927                                          ; LCCOMB_X19_Y23_N20 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[6][8]~529                                           ; LCCOMB_X20_Y23_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[7][0]~115                                           ; LCCOMB_X32_Y22_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[7][16]~953                                          ; LCCOMB_X24_Y23_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[7][24]~929                                          ; LCCOMB_X24_Y23_N12 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|data[7][8]~532                                           ; LCCOMB_X35_Y14_N26 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|req_addr[22]~5                                           ; LCCOMB_X21_Y13_N24 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|req_addr[2]~8                                            ; LCCOMB_X17_Y16_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|req_addr[31]~7                                           ; LCCOMB_X21_Y13_N16 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|req_addr[9]~6                                            ; LCCOMB_X21_Y13_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|req_len[0]~1                                             ; LCCOMB_X23_Y13_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|Selector103~10                             ; LCCOMB_X16_Y12_N24 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|Selector135~1                              ; LCCOMB_X15_Y12_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|Selector78~3                               ; LCCOMB_X14_Y12_N18 ; 4       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|active_addr[2]~27                          ; LCCOMB_X16_Y12_N16 ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|app_rd_data[0]~0                           ; LCCOMB_X17_Y15_N2  ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|dq[0]~0                                    ; LCCOMB_X16_Y8_N0   ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|dq_out[0]                                  ; FF_X11_Y15_N5      ; 17      ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|io_addr[0]~2                               ; LCCOMB_X16_Y8_N16  ; 12      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|next_state.WRITE~4                         ; LCCOMB_X12_Y12_N14 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|state.ACTIVE                               ; FF_X14_Y12_N1      ; 55      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|state.IDLE                                 ; FF_X14_Y12_N11     ; 36      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|state.READ                                 ; FF_X14_Y12_N13     ; 18      ; Clock enable, Sync. load   ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|time_counter[28]~97                        ; LCCOMB_X14_Y12_N2  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|time_counter[28]~98                        ; LCCOMB_X12_Y12_N24 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|sdram_ctl:ram|xfer_cnt[31]~48                            ; LCCOMB_X11_Y15_N16 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sdram_peri:ram_peri|state[0]~10                                              ; LCCOMB_X19_Y16_N24 ; 6       ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|always0~0       ; LCCOMB_X43_Y10_N24 ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rempty    ; FF_X36_Y17_N1      ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|always0~0         ; LCCOMB_X39_Y8_N16  ; 2       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wfull         ; FF_X36_Y8_N7       ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|next_dOE                                                 ; FF_X43_Y6_N23      ; 9       ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; syncFT245:ft245_bus|output_fifo_rinc                                         ; FF_X43_Y6_N5       ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1312,7 +1310,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                         ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; ftdi_clk                                                                     ; PIN_T9   ; 72      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4    ; 1649    ; 17                                   ; Global Clock         ; GCLK18           ; --                        ;
+; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4    ; 1670    ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
 +------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1321,19 +1319,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+---------+
 ; Name                                                                         ; Fan-Out ;
 +------------------------------------------------------------------------------+---------+
-; sdram_peri:ram_peri|data[0][6]~50                                            ; 728     ;
-; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_locked ; 651     ;
+; sdram_peri:ram_peri|data[0][4]~50                                            ; 728     ;
+; pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_locked ; 649     ;
 +------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
-+-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; Name                                                                                                                        ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location      ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
-+-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 64           ; 8            ; 64           ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 512  ; 64                          ; 8                           ; 64                          ; 8                           ; 512                 ; 1    ; None ; M9K_X33_Y7_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; Dual Clocks ; 64           ; 8            ; 64           ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 512  ; 64                          ; 8                           ; 64                          ; 8                           ; 512                 ; 1    ; None ; M9K_X33_Y5_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-+-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+---------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; Name                                                                                                                        ; Type ; Mode             ; Clock Mode  ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF  ; Location       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
++-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; syncFT245:ft245_bus|async_fifo:incoming_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Dual Clocks ; 64           ; 8            ; 64           ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 512  ; 64                          ; 8                           ; 64                          ; 8                           ; 512                 ; 1    ; None ; M9K_X33_Y14_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; Dual Clocks ; 64           ; 8            ; 64           ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 512  ; 64                          ; 8                           ; 64                          ; 8                           ; 512                 ; 1    ; None ; M9K_X33_Y6_N0  ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
++-----------------------------------------------------------------------------------------------------------------------------+------+------------------+-------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------+----------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1342,125 +1340,125 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 5,299 / 71,559 ( 7 % ) ;
-; C16 interconnects     ; 87 / 2,597 ( 3 % )     ;
-; C4 interconnects      ; 2,699 / 46,848 ( 6 % ) ;
-; Direct links          ; 553 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 5,340 / 71,559 ( 7 % ) ;
+; C16 interconnects     ; 155 / 2,597 ( 6 % )    ;
+; C4 interconnects      ; 3,625 / 46,848 ( 8 % ) ;
+; Direct links          ; 323 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 2,038 / 24,624 ( 8 % ) ;
-; R24 interconnects     ; 127 / 2,496 ( 5 % )    ;
-; R4 interconnects      ; 3,045 / 62,424 ( 5 % ) ;
+; Local interconnects   ; 2,132 / 24,624 ( 9 % ) ;
+; R24 interconnects     ; 225 / 2,496 ( 9 % )    ;
+; R4 interconnects      ; 4,099 / 62,424 ( 7 % ) ;
 +-----------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.10) ; Number of LABs  (Total = 271) ;
+; Number of Logic Elements  (Average = 13.21) ; Number of LABs  (Total = 273) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 25                            ;
-; 2                                           ; 8                             ;
-; 3                                           ; 2                             ;
-; 4                                           ; 4                             ;
-; 5                                           ; 2                             ;
-; 6                                           ; 1                             ;
-; 7                                           ; 0                             ;
-; 8                                           ; 2                             ;
-; 9                                           ; 1                             ;
+; 1                                           ; 22                            ;
+; 2                                           ; 6                             ;
+; 3                                           ; 5                             ;
+; 4                                           ; 2                             ;
+; 5                                           ; 3                             ;
+; 6                                           ; 4                             ;
+; 7                                           ; 2                             ;
+; 8                                           ; 1                             ;
+; 9                                           ; 2                             ;
 ; 10                                          ; 2                             ;
-; 11                                          ; 4                             ;
+; 11                                          ; 2                             ;
 ; 12                                          ; 6                             ;
-; 13                                          ; 15                            ;
-; 14                                          ; 21                            ;
-; 15                                          ; 28                            ;
-; 16                                          ; 150                           ;
+; 13                                          ; 5                             ;
+; 14                                          ; 24                            ;
+; 15                                          ; 38                            ;
+; 16                                          ; 149                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.59) ; Number of LABs  (Total = 271) ;
+; LAB-wide Signals  (Average = 1.60) ; Number of LABs  (Total = 273) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 76                            ;
-; 1 Clock                            ; 243                           ;
-; 1 Clock enable                     ; 57                            ;
-; 1 Sync. clear                      ; 5                             ;
-; 1 Sync. load                       ; 7                             ;
-; 2 Clock enables                    ; 35                            ;
-; 2 Clocks                           ; 9                             ;
+; 1 Async. clear                     ; 75                            ;
+; 1 Clock                            ; 245                           ;
+; 1 Clock enable                     ; 67                            ;
+; 1 Sync. clear                      ; 6                             ;
+; 1 Sync. load                       ; 6                             ;
+; 2 Clock enables                    ; 33                            ;
+; 2 Clocks                           ; 5                             ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 19.15) ; Number of LABs  (Total = 271) ;
+; Number of Signals Sourced  (Average = 19.28) ; Number of LABs  (Total = 273) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 11                            ;
-; 2                                            ; 15                            ;
+; 1                                            ; 13                            ;
+; 2                                            ; 11                            ;
 ; 3                                            ; 3                             ;
-; 4                                            ; 4                             ;
+; 4                                            ; 3                             ;
 ; 5                                            ; 3                             ;
-; 6                                            ; 2                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 2                             ;
-; 9                                            ; 0                             ;
-; 10                                           ; 1                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 0                             ;
-; 13                                           ; 2                             ;
-; 14                                           ; 3                             ;
-; 15                                           ; 8                             ;
-; 16                                           ; 9                             ;
-; 17                                           ; 12                            ;
-; 18                                           ; 20                            ;
-; 19                                           ; 15                            ;
-; 20                                           ; 23                            ;
-; 21                                           ; 25                            ;
-; 22                                           ; 16                            ;
-; 23                                           ; 13                            ;
-; 24                                           ; 11                            ;
-; 25                                           ; 13                            ;
-; 26                                           ; 14                            ;
-; 27                                           ; 9                             ;
+; 6                                            ; 5                             ;
+; 7                                            ; 0                             ;
+; 8                                            ; 1                             ;
+; 9                                            ; 1                             ;
+; 10                                           ; 0                             ;
+; 11                                           ; 4                             ;
+; 12                                           ; 2                             ;
+; 13                                           ; 0                             ;
+; 14                                           ; 1                             ;
+; 15                                           ; 4                             ;
+; 16                                           ; 18                            ;
+; 17                                           ; 17                            ;
+; 18                                           ; 17                            ;
+; 19                                           ; 4                             ;
+; 20                                           ; 29                            ;
+; 21                                           ; 12                            ;
+; 22                                           ; 31                            ;
+; 23                                           ; 11                            ;
+; 24                                           ; 16                            ;
+; 25                                           ; 5                             ;
+; 26                                           ; 10                            ;
+; 27                                           ; 19                            ;
 ; 28                                           ; 7                             ;
-; 29                                           ; 6                             ;
-; 30                                           ; 4                             ;
-; 31                                           ; 4                             ;
-; 32                                           ; 13                            ;
+; 29                                           ; 5                             ;
+; 30                                           ; 7                             ;
+; 31                                           ; 3                             ;
+; 32                                           ; 11                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 7.43) ; Number of LABs  (Total = 271) ;
+; Number of Signals Sourced Out  (Average = 7.43) ; Number of LABs  (Total = 273) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 31                            ;
-; 2                                               ; 11                            ;
-; 3                                               ; 23                            ;
-; 4                                               ; 32                            ;
-; 5                                               ; 17                            ;
-; 6                                               ; 23                            ;
-; 7                                               ; 18                            ;
-; 8                                               ; 18                            ;
-; 9                                               ; 15                            ;
-; 10                                              ; 19                            ;
-; 11                                              ; 6                             ;
+; 1                                               ; 24                            ;
+; 2                                               ; 32                            ;
+; 3                                               ; 20                            ;
+; 4                                               ; 36                            ;
+; 5                                               ; 12                            ;
+; 6                                               ; 14                            ;
+; 7                                               ; 9                             ;
+; 8                                               ; 20                            ;
+; 9                                               ; 18                            ;
+; 10                                              ; 12                            ;
+; 11                                              ; 10                            ;
 ; 12                                              ; 14                            ;
-; 13                                              ; 3                             ;
-; 14                                              ; 9                             ;
-; 15                                              ; 6                             ;
-; 16                                              ; 14                            ;
-; 17                                              ; 3                             ;
-; 18                                              ; 3                             ;
-; 19                                              ; 0                             ;
+; 13                                              ; 10                            ;
+; 14                                              ; 6                             ;
+; 15                                              ; 10                            ;
+; 16                                              ; 15                            ;
+; 17                                              ; 5                             ;
+; 18                                              ; 1                             ;
+; 19                                              ; 1                             ;
 ; 20                                              ; 2                             ;
-; 21                                              ; 2                             ;
-; 22                                              ; 1                             ;
+; 21                                              ; 1                             ;
+; 22                                              ; 0                             ;
 ; 23                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
@@ -1468,45 +1466,46 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 18.73) ; Number of LABs  (Total = 271) ;
+; Number of Distinct Inputs  (Average = 18.55) ; Number of LABs  (Total = 273) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 8                             ;
-; 3                                            ; 12                            ;
-; 4                                            ; 12                            ;
-; 5                                            ; 3                             ;
-; 6                                            ; 2                             ;
-; 7                                            ; 5                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 3                             ;
-; 10                                           ; 3                             ;
-; 11                                           ; 5                             ;
-; 12                                           ; 6                             ;
-; 13                                           ; 9                             ;
-; 14                                           ; 5                             ;
-; 15                                           ; 6                             ;
-; 16                                           ; 11                            ;
-; 17                                           ; 11                            ;
-; 18                                           ; 15                            ;
-; 19                                           ; 12                            ;
-; 20                                           ; 16                            ;
-; 21                                           ; 18                            ;
-; 22                                           ; 8                             ;
-; 23                                           ; 15                            ;
-; 24                                           ; 11                            ;
-; 25                                           ; 14                            ;
-; 26                                           ; 11                            ;
-; 27                                           ; 7                             ;
-; 28                                           ; 5                             ;
-; 29                                           ; 2                             ;
+; 2                                            ; 2                             ;
+; 3                                            ; 8                             ;
+; 4                                            ; 17                            ;
+; 5                                            ; 5                             ;
+; 6                                            ; 7                             ;
+; 7                                            ; 7                             ;
+; 8                                            ; 4                             ;
+; 9                                            ; 1                             ;
+; 10                                           ; 1                             ;
+; 11                                           ; 4                             ;
+; 12                                           ; 3                             ;
+; 13                                           ; 6                             ;
+; 14                                           ; 9                             ;
+; 15                                           ; 9                             ;
+; 16                                           ; 12                            ;
+; 17                                           ; 18                            ;
+; 18                                           ; 11                            ;
+; 19                                           ; 20                            ;
+; 20                                           ; 24                            ;
+; 21                                           ; 7                             ;
+; 22                                           ; 11                            ;
+; 23                                           ; 7                             ;
+; 24                                           ; 8                             ;
+; 25                                           ; 13                            ;
+; 26                                           ; 10                            ;
+; 27                                           ; 4                             ;
+; 28                                           ; 10                            ;
+; 29                                           ; 6                             ;
 ; 30                                           ; 9                             ;
-; 31                                           ; 8                             ;
+; 31                                           ; 4                             ;
 ; 32                                           ; 4                             ;
-; 33                                           ; 3                             ;
-; 34                                           ; 1                             ;
-; 35                                           ; 4                             ;
-; 36                                           ; 4                             ;
+; 33                                           ; 2                             ;
+; 34                                           ; 6                             ;
+; 35                                           ; 2                             ;
+; 36                                           ; 0                             ;
+; 37                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -1675,49 +1674,6 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +---------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                ;
-+---------------------------------------------------+----------------------+-------------------+
-; Source Clock(s)                                   ; Destination Clock(s) ; Delay Added in ns ;
-+---------------------------------------------------+----------------------+-------------------+
-; pll_0|altpll_component|auto_generated|pll1|clk[0] ; ftdi_clk             ; 49.9              ;
-+---------------------------------------------------+----------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                   ;
-+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Register                                                            ; Destination Register                                                                                                                           ; Delay Added in ns ;
-+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[1]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[1]                                                                       ; 3.789             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[3]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[3]                                                                       ; 3.789             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[5]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[5]                                                                       ; 3.789             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[4]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[4]                                                                       ; 3.789             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[5] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[5]                                                                     ; 3.789             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[1] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[1]                                                                     ; 3.545             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[0] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[0]                                                                     ; 3.545             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[3] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[3]                                                                     ; 3.545             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[2] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[2]                                                                     ; 3.545             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rptr[4] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[4]                                                                     ; 3.545             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[6]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[6]                                                                       ; 3.379             ;
-; syncFT245:ft245_bus|async_fifo:incoming_fifo|rptr_empty:rptr_empty|rbin[6] ; syncFT245:ft245_bus|async_fifo:incoming_fifo|sync_r2w:sync_r2w|wq1_rptr[6]                                                                     ; 3.362             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[0]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[0]                                                                       ; 3.334             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wptr[2]     ; syncFT245:ft245_bus|async_fifo:output_fifo|sync_w2r:sync_w2r|rq1_wptr[2]                                                                       ; 3.193             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[5]     ; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0~porta_address_reg0 ; 0.043             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[4]     ; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0~porta_address_reg0 ; 0.043             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[1]     ; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0~porta_address_reg0 ; 0.037             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[3]     ; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0~porta_address_reg0 ; 0.033             ;
-; syncFT245:ft245_bus|async_fifo:output_fifo|wptr_full:wptr_full|wbin[2]     ; syncFT245:ft245_bus|async_fifo:output_fifo|fifomem:fifomem|altsyncram:mem_rtl_0|altsyncram_mmd1:auto_generated|ram_block1a0~porta_address_reg0 ; 0.018             ;
-; bus_decode:bdec|fsm_state.CKSUM                                            ; bus_decode:bdec|fsm_state.ISSUE                                                                                                                ; 0.014             ;
-; bus_encode:benc|token_a[12]                                                ; bus_encode:benc|source_d[4]                                                                                                                    ; 0.013             ;
-; bus_encode:benc|token_a[10]                                                ; bus_encode:benc|source_d[2]                                                                                                                    ; 0.013             ;
-; bus_encode:benc|token_a[8]                                                 ; bus_encode:benc|source_d[0]                                                                                                                    ; 0.013             ;
-+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 23 path(s) that have the largest delay added for hold.
-
-
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -1740,12 +1696,19 @@ Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'DE0_Nano.SDC'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info (332144): No user constrained generated clocks found in the design
-Info (332144): No user constrained base clocks found in the design
-Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (332104): Reading SDC File: 'DE0_NANO.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {pll_0|altpll_component|auto_generated|pll1|inclk[0]} -multiply_by 2 -duty_cycle 50.00 -name {pll_0|altpll_component|auto_generated|pll1|clk[0]} {pll_0|altpll_component|auto_generated|pll1|clk[0]}
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Warning (332060): Node: ftdi_clk was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register syncFT245:ft245_bus|async_fifo:incoming_fifo|wptr_full:wptr_full|wptr[4] is being clocked by ftdi_clk
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 2 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000     CLOCK_50
+    Info (332111):   10.000 pll_0|altpll_component|auto_generated|pll1|clk[0]
 Info (176353): Automatically promoted node pll:pll_0|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_4) File: D:/Projects/usb_capture/fpga/db/pll_altpll.v Line: 93
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
 Info (176353): Automatically promoted node ftdi_clk~input (placed in PIN T9 (CLK12, DIFFCLK_7n)) File: D:/Projects/usb_capture/fpga/top.v Line: 5
@@ -1849,14 +1812,15 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 5% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 26% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
+Info (170195): Router estimated average interconnect usage is 7% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 42% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.89 seconds.
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.39 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1897,9 +1861,9 @@ Warning (169064): Following 1 pins have no output enable or a GND or VCC output 
     Info (169065): Pin ftdi_siwua_n has a permanently enabled output enable File: D:/Projects/usb_capture/fpga/top.v Line: 11
 Info (144001): Generated suppressed messages file D:/Projects/usb_capture/fpga/usb_capture.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 97 warnings
-    Info: Peak virtual memory: 6600 megabytes
-    Info: Processing ended: Sun Jul  2 22:26:38 2023
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 6580 megabytes
+    Info: Processing ended: Thu Jul  6 23:35:25 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:05
 
 

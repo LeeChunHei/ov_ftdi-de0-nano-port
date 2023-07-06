@@ -17,16 +17,7 @@ module sdram_peri
 	input		[13:0]adr,
 	input		we,
 	input		[7:0]dat_w,
-	output reg	[7:0]dat_r,
-	
-	//probe
-	output p_cmd_winc,
-	output p_app_req,
-	output p_app_req_ack,
-	output [7:0]p_state,
-	output p_read_fifo_rempty,
-	output p_app_rd_valid,
-	output [7:0]p_app_req_len
+	output reg	[7:0]dat_r
 );
 
 	reg app_req;
@@ -59,52 +50,47 @@ module sdram_peri
 	parameter WR1 = 8'd5;
 	parameter RD1 = 8'd6;
 	
-	//probe
-	assign p_app_req = app_req;
-	assign p_app_req_ack = app_req_ack;
-	assign p_state = state;
-	
 	sdram_ctl
 	#(
-.CLK_FREQ(100000000),
-.ADDR_WIDTH(13),
-.BA_WIDTH(2),
-.DQM_WIDTH(2),
-.DQ_WIDTH(16),
-.BST_LEN(8),	// Burst Length
-.CAS(3),			// CAS latency
-.TRP(3),			// tRP, Command Period (PRE to ACT), in cycle
-.TRC(9),			// tRC, Command Period (REF to REF / ACT to ACT), in cycle
-.TMRD(2),		// tMRD, Mode Register Set To Command Delay Time, in cycle
-.TRCD(3),		// tRCD, Active Command To Read/Write Command Delay Time, in cycle
-.TREF(32),		// tREF, Refresh Cycle Time, in ms
-.REFCNT(8192)	// Minimum Refresh execution in each tREF period
+		.CLK_FREQ(100000000),
+		.ADDR_WIDTH(13),
+		.BA_WIDTH(2),
+		.DQM_WIDTH(2),
+		.DQ_WIDTH(16),
+		.BST_LEN(8),	// Burst Length
+		.CAS(3),			// CAS latency
+		.TRP(3),			// tRP, Command Period (PRE to ACT), in cycle
+		.TRC(9),			// tRC, Command Period (REF to REF / ACT to ACT), in cycle
+		.TMRD(2),		// tMRD, Mode Register Set To Command Delay Time, in cycle
+		.TRCD(3),		// tRCD, Active Command To Read/Write Command Delay Time, in cycle
+		.TREF(32),		// tREF, Refresh Cycle Time, in ms
+		.REFCNT(8192)	// Minimum Refresh execution in each tREF period
 	)
 	ram
 	(
-.clk(clk),
-.rst_n(rst_n),
-	
-.app_req(app_req),
-.app_req_ack(app_req_ack),
-.app_wr(app_req_wr_n),	// write = 0, read = 1
-.app_req_len(app_req_len),
-.app_req_addr(app_req_addr),
-.app_wr_data(app_wr_data),
-.app_wr_next_req(app_wr_next_req),
-.app_rd_data(app_rd_data),
-.app_rd_ready(app_rd_valid),
-	
-.io_clk(io_clk),
-.io_cs_n(io_cs_n),
-.io_cke(io_cke),
-.io_ras_n(io_ras_n),
-.io_cas_n(io_cas_n),
-.io_we_n(io_we_n),
-.io_dqm(io_dqm),
-.io_ba(io_ba),
-.io_addr(io_addr),
-.io_dq(io_dq)
+		.clk(clk),
+		.rst_n(rst_n),
+			
+		.app_req(app_req),
+		.app_req_ack(app_req_ack),
+		.app_wr(app_req_wr_n),	// write = 0, read = 1
+		.app_req_len(app_req_len),
+		.app_req_addr(app_req_addr),
+		.app_wr_data(app_wr_data),
+		.app_wr_next_req(app_wr_next_req),
+		.app_rd_data(app_rd_data),
+		.app_rd_ready(app_rd_valid),
+			
+		.io_clk(io_clk),
+		.io_cs_n(io_cs_n),
+		.io_cke(io_cke),
+		.io_ras_n(io_ras_n),
+		.io_cas_n(io_cas_n),
+		.io_we_n(io_we_n),
+		.io_dqm(io_dqm),
+		.io_ba(io_ba),
+		.io_addr(io_addr),
+		.io_dq(io_dq)
 	); 
 	
 	initial begin
@@ -342,14 +328,6 @@ module sdram_peri
 //	assign pad_sdr_din = io_dq;
 //	assign io_clk = ~clk;
 //	
-//	//probe
-//	assign p_cmd_winc = cmd_fifo_winc;
-//	assign p_app_req = app_req;
-//	assign p_app_req_ack = app_req_ack;
-//	assign p_state = state;
-//	assign p_read_fifo_rempty = read_fifo_rempty;
-//	assign p_app_rd_valid = app_rd_valid;
-//	assign p_app_req_len = app_req_len;
 //	
 //	async_fifo 
 //	#(
@@ -741,10 +719,6 @@ module sdram_peri
 //	assign pad_sdr_din = io_dq;
 //	assign io_clk = ~clk;
 //	
-//	//probe
-//	assign p_app_req = app_req;
-//	assign p_app_req_ack = app_req_ack;
-//	assign p_state = state;
 //	
 //	sdrc_core
 //	#(

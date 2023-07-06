@@ -17,16 +17,7 @@ module test_sdram_peri
 		output reg we,
 		output reg [7:0]dat_w,
 		output [7:0]dat_r,
-		output reg [7:0]state,
-		
-		//probe
-		output p_cmd_winc,
-		output p_app_req,
-		output p_app_req_ack,
-		output [7:0]p_state,
-		output p_read_fifo_rempty,
-		output p_app_rd_valid,
-		output [8:0]p_app_req_len
+		output reg [7:0]state
 );
 
 	reg [31:0]data[7:0];
@@ -78,14 +69,6 @@ module test_sdram_peri
 		.we(we),
 		.dat_w(dat_w),
 		.dat_r(dat_r),
-		
-		.p_cmd_winc(p_cmd_winc),
-		.p_app_req(p_app_req),
-		.p_app_req_ack(p_app_req_ack),
-		.p_state(p_state),
-		.p_read_fifo_rempty(p_read_fifo_rempty),
-		.p_app_rd_valid(p_app_rd_valid),
-		.p_app_req_len(p_app_req_len)
 	);
 
 	initial begin
@@ -98,6 +81,9 @@ module test_sdram_peri
 		data[2] = 32'h3344;
 		data[3] = 32'h4455;
 		data[4] = 32'h5566;
+		data[5] = 32'h6677;
+		data[6] = 32'h7788;
+		data[7] = 32'h8899;
 		state = IDLE;
 	end
 	
@@ -112,6 +98,9 @@ module test_sdram_peri
 			data[2] <= 32'h3344;
 			data[3] <= 32'h4455;
 			data[4] <= 32'h5566;
+			data[5] <= 32'h6677;
+			data[6] <= 32'h7788;
+			data[7] <= 32'h8899;
 			state <= IDLE;
 		end
 		else begin
@@ -134,7 +123,7 @@ module test_sdram_peri
 				WR_SETUP_1: begin
 					adr <= {5'd1,9'd1};
 					we <= 1;
-					dat_w <= 8;
+					dat_w <= 16;
 					state <= WR_SETUP_2;
 				end
 				WR_SETUP_2: begin

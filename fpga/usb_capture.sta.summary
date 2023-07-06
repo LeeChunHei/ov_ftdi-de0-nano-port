@@ -2,84 +2,48 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'ftdi_clk'
-Slack : -2.571
-TNS   : -88.433
-
 Type  : Slow 1200mV 85C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -2.073
-TNS   : -25.690
+Slack : 1.864
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.301
+Slack : 0.357
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'ftdi_clk'
-Slack : 0.313
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ftdi_clk'
-Slack : -3.000
-TNS   : -81.726
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.742
+Slack : 4.745
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.747
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'ftdi_clk'
-Slack : -2.197
-TNS   : -73.218
-
 Type  : Slow 1200mV 0C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.705
-TNS   : -20.940
+Slack : 2.714
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.291
+Slack : 0.311
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'ftdi_clk'
-Slack : 0.303
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ftdi_clk'
-Slack : -3.000
-TNS   : -81.724
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.740
+Slack : 4.743
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : 9.709
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'ftdi_clk'
-Slack : -0.992
-TNS   : -27.507
-
 Type  : Fast 1200mV 0C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -0.827
-TNS   : -9.734
+Slack : 3.466
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.150
+Slack : 0.186
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'ftdi_clk'
-Slack : 0.156
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ftdi_clk'
-Slack : -3.000
-TNS   : -97.581
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.749
+Slack : 4.752
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
